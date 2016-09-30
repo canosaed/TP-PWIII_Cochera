@@ -1,0 +1,10 @@
+﻿body {
+}
+.form-control{width:50%;margin-left:auto;margin-right:auto}
+span{display:block;text-align:center;
+}
+#rblPerfil{margin-left:auto;margin-right:auto;}
+#rblPerfil tr{display:inline-block;}
+.div-btn{display:block;width:50%;margin-left:auto;margin-right:auto;}
+#btnActualizar{width:48%;}
+#btnCancelar{width:48%;float:right;}

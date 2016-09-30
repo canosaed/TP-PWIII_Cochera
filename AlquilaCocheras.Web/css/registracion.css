@@ -1,0 +1,19 @@
+﻿body {
+}
+.form-control
+{
+    width:50%;margin-left:auto;margin-right:auto
+}
+span
+{
+    display:block;text-align:center;
+}
+#btnRegistrarUsuario
+{
+    margin-left:auto;margin-right:auto;display:block;
+}
+#rblPerfil
+{
+    margin-left:auto;margin-right:auto;
+}
+#rblPerfil tr{display:inline-block;}
