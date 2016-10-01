@@ -2,7 +2,7 @@
 <%@ Register Src="~/MasterPages/UserControlDefault.ascx" TagPrefix="ucd" TagName="UserControlDefault"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-<%-- <link href="css/default.css" rel="stylesheet" /> --%>
+<link href="css/default.css" rel="stylesheet" /> 
 <link href="css/styles.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
