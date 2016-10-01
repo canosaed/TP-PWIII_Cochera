@@ -1,10 +1,7 @@
-﻿body {
-}
-.form-control{width:50%;margin-left:auto;margin-right:auto}
-span{display:block;text-align:center;
+﻿span{display:block;text-align:center;
 }
 .contenedor-botones{width:50%;margin-left:auto;margin-right:auto;}
-#btnFiltrar{display:block;width:50%;margin-left:auto;float:left;}
+
 #imgFoto{    margin-left: auto;
     margin-right: auto;
     display: block;
@@ -12,11 +9,3 @@ span{display:block;text-align:center;
     height: 100px}
 #btnConfirmar{width: 48%;}
 #btnCancelar{width: 48%;float:right;}
-a{  
-    background-color: gainsboro;
-    text-align: center;
-    float: right;
-    display: block;
-    padding-bottom: 9px;
-    padding-top: 5px;
-}
