@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
     <link rel="stylesheet" href="../css/styles.css"/>
+   <%-- <script type="text/javascript" src="../js/custom.js"></script>--%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
@@ -17,7 +18,6 @@
     <asp:Label ID="label1" runat="server" Text="Ubicación: "></asp:Label>
     <asp:TextBox ID="txtUbicacion" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUbicacion" ForeColor="Red" ErrorMessage="Debe ingresar una Ubicacion."></asp:RequiredFieldValidator>
-    <ucm:UserControlMapa ID="UCMapa" runat="server" /> 
     </div>
     <%--inicio periodo disponible --%>
     <div class="form-group">
@@ -136,7 +136,11 @@
         <asp:FileUpload ID="fuFoto" runat="server" ClientIDMode="Static" CssClass="btn btn-default"/>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="fuFoto" ForeColor="Red" ErrorMessage="Debe Subir una imagen"></asp:RequiredFieldValidator>
     </div>
+
     
+    <ucm:UserControlMapa ID="UCMapa" runat="server" /> 
+    
+
     <div class="action">
     <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static"/>   
     </div>
@@ -146,5 +150,18 @@
                     </div>
                 </div>
             </div>
-        
+
+ <script type="text/javascript">
+     function initMap() {
+         // Create a map object and specify the DOM element for display.
+         var map = new google.maps.Map(document.getElementById('map'), {
+             center: { lat: -34.670173, lng: -58.562059}, 
+             scrollwheel: true,
+             mapTypeId: google.maps.MapTypeId.ROADMAP,
+             zoom: 16
+         });
+     }
+
+ </script>
+ <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgfnb0bI1YjK4VGG5PMj9fa_vHKj-vfZU&callback=initMap" async defer></script>        
 </asp:Content>
