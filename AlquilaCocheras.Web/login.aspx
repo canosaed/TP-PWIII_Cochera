@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Anonimo.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="AlquilaCocheras.Web.login" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <link rel="stylesheet" href="css/login.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
+    <%-- <link rel="stylesheet" href="../css/styles.css"/>
+         <link rel="stylesheet" href="../css/app.css"/>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
     <div class="page-content container">
@@ -38,7 +38,7 @@
             </div>
                     <div class="already">
 			            <p>No tienes una Cuenta?</p>
-			            <a class="registrarse" href="/registracion.aspx">Registrarse como nuevo usuario.</a>
+			            <a class=" " href="/registracion.aspx">Registrarse como nuevo usuario.</a>
 			        </div>
                 </div>
                     </div>

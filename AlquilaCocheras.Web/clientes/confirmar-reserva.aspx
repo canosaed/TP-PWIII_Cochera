@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Clientes.Master" AutoEventWireup="true" CodeBehind="confirmar-reserva.aspx.cs" Inherits="AlquilaCocheras.Web.clientes.confirmar_reserva" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <%-- <link rel="stylesheet" href="../css/confirmar-reserva.css"/> --%>
+    <%-- <link rel="stylesheet" href="../css/styles.css"/>
+         <link rel="stylesheet" href="../css/app.css"/> --%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
     <div class="page-content container">
