@@ -12,6 +12,11 @@ namespace AlquilaCocheras.Web.propietarios
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session["tipo"] == null)
+            {
+                Session["url"] = "/propietarios/reservas.aspx";
+                Response.Redirect("/login.aspx");
+            }
         }
     }
 }

@@ -1,19 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Clientes.Master" AutoEventWireup="true" CodeBehind="reservar.aspx.cs" Inherits="AlquilaCocheras.Web.clientes.reservar" %>
+<%@ Register Src="~/MasterPages/UserControlReservar.ascx" TagPrefix="ucr" TagName="UserControlReservar"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <link rel="stylesheet" href="../css/reservar.css">
+    <link rel="stylesheet" href="../css/reservar.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
-    <%--Esto va en un UserControl--%>
+ 
     <%--Inicio User Control--%>
-    <asp:Label ID="label1" runat="server" Text="Ubicación: "></asp:Label>
-    <asp:TextBox ID="txtUbicacion" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ForeColor="Red" ControlToValidate="txtUbicacion" runat="server" ErrorMessage="Debe ingresar una ubicacion."></asp:RequiredFieldValidator>
-    <asp:Button ID="btnFiltrar" CssClass="btn btn-primary" runat="server" Text="Buscar" ClientIDMode="Static" />
-
-    <%--si no se encuentran resultados mostrar mensaje "No se encontraron resultados"--%>
-    <asp:Label ID="lblResultado" runat="server"></asp:Label>
-
+    <ucr:UserControlReservar ID="UCReservar" runat="server" />
+     
     <%--Fin User Control--%>
 
       <%--    LISTADO  (gridview, repeater o datalist)
@@ -28,5 +24,13 @@
     y el link a confirmar reserva que esta agregado abajo como asp:HyperLink, 
         donde deberán cambiarle dinamicamente el link y ponerle el idcochera correspondiente
     --%>
-    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123">Reservar</asp:HyperLink>
+    <div class="col-md-2 col-md-offset-5">
+         <div class="content-wrap">
+	       <span>
+    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-md btn-block btn-default">Reservar</asp:HyperLink>
+            </span>
+        </div>
+    </div>
+
+    
 </asp:Content>

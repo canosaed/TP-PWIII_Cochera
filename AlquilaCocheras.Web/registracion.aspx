@@ -44,13 +44,10 @@
     </div>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-8">
-			<div class="">
-	            <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static">
-                    <asp:ListItem Text="Cliente" Value="1"  />
-
-                    <asp:ListItem Text="Propietario" Value="2" />
-                </asp:RadioButtonList>
-			</div>
+			 <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static">
+              <asp:ListItem Text="Cliente"     Value="1"  />
+              <asp:ListItem Text="Propietario" Value="2" />
+             </asp:RadioButtonList>	
 		 </div>
 	</div>
    

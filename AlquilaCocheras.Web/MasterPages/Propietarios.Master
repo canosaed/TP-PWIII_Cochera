@@ -5,6 +5,19 @@
     </asp:ContentPlaceHolder>    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal_Base" runat="server">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">AlquilaCochera</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="../propietarios/cocheras.aspx">Crear cochera​ </a></li>
+      <li><a href="../propietarios/perfil.aspx">Perfil</a></li> 
+      <li class="active"><a href="../propietarios/reservas.aspx">Reservas</a></li>
+      <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li> 
+    </ul>
+  </div>
+</nav>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder_Principal" runat="server">
     </asp:ContentPlaceHolder>    
 </asp:Content>

@@ -11,8 +11,8 @@ namespace AlquilaCocheras.Web.clientes
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-            if (Session["tipo"] == null )
+
+            if (Session["tipo"] == null)
             {
                 Session["url"] = "/clientes/reservar.aspx";
                 Response.Redirect("/login.aspx");

@@ -1,7 +1,4 @@
-﻿body {
-}
-
-span
+﻿span
 {
     display:block;text-align:center;
 }
@@ -13,4 +10,4 @@ span
 {
     margin-left:auto;margin-right:auto;
 }
-#rblPerfil tr{display:inline-block;}
+#rblPerfil tr{display:inline-block; padding: 3px;}

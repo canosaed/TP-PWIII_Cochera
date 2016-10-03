@@ -83,6 +83,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
     <Content Include="MasterPages\UserControlDefault.ascx" />
+    <Content Include="MasterPages\UserControlReservar.ascx" />
     <Content Include="packages.config" />
     <Content Include="MasterPages\Base\Base.Master" />
     <Content Include="MasterPages\Anonimo.Master" />
@@ -189,6 +190,13 @@
     </Compile>
     <Compile Include="MasterPages\UserControlDefault.ascx.designer.cs">
       <DependentUpon>UserControlDefault.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\UserControlReservar.ascx.cs">
+      <DependentUpon>UserControlReservar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\UserControlReservar.ascx.designer.cs">
+      <DependentUpon>UserControlReservar.ascx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="propietarios\cocheras.aspx.cs">
