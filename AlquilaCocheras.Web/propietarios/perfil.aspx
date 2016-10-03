@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Propietarios.Master" AutoEventWireup="true" CodeBehind="perfil.aspx.cs" Inherits="AlquilaCocheras.Web.propietarios.perfil" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <link rel="stylesheet" href="../css/perfil.css"/>
-    <link rel="stylesheet" href="../css/styles.css"/>
+    <%-- <link rel="stylesheet" href="../css/styles.css"/>
+         <link rel="stylesheet" href="../css/app.css"/>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
 

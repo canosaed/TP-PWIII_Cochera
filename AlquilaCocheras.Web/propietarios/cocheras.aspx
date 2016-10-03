@@ -2,7 +2,6 @@
 <%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucm" TagName="UserControlMapa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <link rel="stylesheet" href="../css/styles.css"/>
    <%-- <script type="text/javascript" src="../js/custom.js"></script>--%>
 </asp:Content>
 
