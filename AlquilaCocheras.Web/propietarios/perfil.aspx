@@ -31,13 +31,15 @@
     <asp:Label ID="label4" runat="server" Text="Contraseña: "></asp:Label>
     <asp:TextBox ID="txtContrasenia" CssClass="form-control" runat="server" TextMode="Password" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtContrasenia" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una contrasena"></asp:RequiredFieldValidator>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ForeColor="Red" ControlToValidate="txtContrasenia" ValidationExpression="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" runat="server" ErrorMessage="<BR> La contraseña debe tener al menos 8 caracteres, una mayuscula y un numero."></asp:RegularExpressionValidator>
     </div>
+
     <div class="form-group">
     <asp:Label ID="label5" runat="server" Text="Confirme Contraseña: "></asp:Label>
     <asp:TextBox ID="txtConfContrasenia" CssClass="form-control" runat="server" TextMode="Password" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="txtConfContrasenia" ForeColor="Red" runat="server" ErrorMessage="Debe reingresar la contrasena"></asp:RequiredFieldValidator>
     </div>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtContrasenia"  ControlToCompare="txtConfContrasenia" ForeColor="Red" ErrorMessage="Las contrasenias deben concidir"></asp:CompareValidator>
+                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtContrasenia"  ControlToCompare="txtConfContrasenia" ForeColor="Red" ErrorMessage="Las contraseñas deben concidir"></asp:CompareValidator>
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-8">
     <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static" CssClass="checkbox-inline">

@@ -53,7 +53,7 @@
    
     <asp:Label ID="lblResultado" runat="server"></asp:Label>
     <div class="action">
-    <asp:Button ID="btnRegistrarUsuario" CssClass="btn btn-primary" runat="server" Text="Registrar usuario" ClientIDMode="Static" />
+    <asp:Button ID="btnRegistrarUsuario" CssClass="btn btn-primary" runat="server" Text="Registrar usuario" ClientIDMode="Static" OnClick="btnRegistrarUsuario_Click" />
     </div>                       
                             </div>
                        </div>

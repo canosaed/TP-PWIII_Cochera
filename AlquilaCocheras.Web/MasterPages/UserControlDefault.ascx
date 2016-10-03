@@ -26,6 +26,9 @@
                   ForeColor="Red"
                   ValidationExpression="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
                   </asp:RegularExpressionValidator> 
+     
+    <asp:CompareValidator ID="CompareValidator1" ControlToValidate="txtFechaInicio" ControlToCompare="txtFechaFin" ForeColor="Red" Operator="LessThan" Type="Date" runat="server" ErrorMessage="La fecha de inicio debe ser menor que la de expiracion"></asp:CompareValidator>
+   
     <div class="action">
     <asp:Button CssClass="btn btn-primary" ID="btnFiltrar" runat="server" Text="Buscar" ClientIDMode="Static" />
     </div>

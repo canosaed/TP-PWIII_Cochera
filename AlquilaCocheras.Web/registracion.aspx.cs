@@ -13,5 +13,10 @@ namespace AlquilaCocheras.Web
         {
            
         }
+
+        protected void btnRegistrarUsuario_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = "Registracion exitosa dirijase al  <a href='login.aspx'>login</a>";
+        }
     }
 }
