@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Propietarios.Master" AutoEventWireup="true" CodeBehind="cocheras.aspx.cs" Inherits="AlquilaCocheras.Web.propietarios.cocheras" %>
+<%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucm" TagName="UserControlMapa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
     <link rel="stylesheet" href="../css/styles.css"/>
@@ -16,6 +17,7 @@
     <asp:Label ID="label1" runat="server" Text="Ubicación: "></asp:Label>
     <asp:TextBox ID="txtUbicacion" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUbicacion" ForeColor="Red" ErrorMessage="Debe ingresar una Ubicacion."></asp:RequiredFieldValidator>
+    <ucm:UserControlMapa ID="UCMapa" runat="server" /> 
     </div>
     <%--inicio periodo disponible --%>
     <div class="form-group">
