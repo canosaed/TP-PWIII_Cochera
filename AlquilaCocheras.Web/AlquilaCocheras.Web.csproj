@@ -83,6 +83,7 @@
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
     <Content Include="MasterPages\UserControlDefault.ascx" />
+    <Content Include="MasterPages\UserControlMapa.ascx" />
     <Content Include="MasterPages\UserControlReservar.ascx" />
     <Content Include="packages.config" />
     <Content Include="MasterPages\Base\Base.Master" />
@@ -190,6 +191,13 @@
     </Compile>
     <Compile Include="MasterPages\UserControlDefault.ascx.designer.cs">
       <DependentUpon>UserControlDefault.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\UserControlMapa.ascx.cs">
+      <DependentUpon>UserControlMapa.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\UserControlMapa.ascx.designer.cs">
+      <DependentUpon>UserControlMapa.ascx</DependentUpon>
     </Compile>
     <Compile Include="MasterPages\UserControlReservar.ascx.cs">
       <DependentUpon>UserControlReservar.ascx</DependentUpon>

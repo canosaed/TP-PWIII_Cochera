@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.master.cs" Inherits="AlquilaCocheras.Web.MasterPages.Base" %>
+<%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucm" TagName="UserControlMapa" %>
 
 <!DOCTYPE html>
 
@@ -18,7 +19,7 @@
 </head>
 <body>
 
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" class="container-fluid">
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder_Principal_Base" runat="server">
         
@@ -26,13 +27,18 @@
     </div>
     </form>
 
-<footer>
+<footer class="container-fluid">
          <div class="container">
-         
+    <ucm:UserControlMapa ID="UCMapa" runat="server" />     
             <div class="copy text-center">
-              Proyecto - P W III  <a href='#'>Universidad Nacional de La Matanza</a>
+              Universidad Nacional de la Matanza ­ DIIT ::
+Tecnicatura en Programación Web :: Programación Web 3 :: <a href='#'>Universidad Nacional de La Matanza</a>
             </div>
-            
+             <div class="text-center">
+                 <label>Alumnos:</label>
+             <label> Lucas&nbsp; </label>:: <label>Tomas&nbsp; </label>
+                 :: <label>&nbsp;Canosa Ezequiel </label>            
+            </div>
          </div>
 </footer>
 </body>

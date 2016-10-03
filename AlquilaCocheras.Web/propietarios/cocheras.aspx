@@ -21,7 +21,7 @@
     <div class="form-group">
     <asp:Label ID="label2" runat="server" Text="Período Disponible: "></asp:Label>
     
-    <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static" TextMode="Date" placeholder="Fecha de inicio"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
                    runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."
                    ControlToValidate="txtFechaInicio"
@@ -34,7 +34,7 @@
         ErrorMessage="Debe ingresar una fecha de inicio." ClientIDMode="Static">
     </asp:RequiredFieldValidator>
    
-    <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static" TextMode="Date" placeholder="Fecha de finalización"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtFechaFin" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una fecha de expiracion."></asp:RequiredFieldValidator>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
               runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."
@@ -47,7 +47,7 @@
     <%--fin periodo disponible --%>
     <div class="form-group">
     <asp:Label ID="label3" runat="server" Text="Horario Diario Disponible: "></asp:Label>
-    <asp:TextBox ID="txtHorarioInicio" CssClass="form-control" runat="server" ClientIDMode="Static" Text="Horario Inicio"></asp:TextBox>
+    <asp:TextBox ID="txtHorarioInicio" CssClass="form-control" runat="server" ClientIDMode="Static" TextMode="Time" placeholder="Horario de Inicio"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtHorarioInicio" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar un horario."></asp:RequiredFieldValidator>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator3"
               runat="server" ErrorMessage="Por favor ingrese una horario valido HH:MM."
@@ -58,7 +58,7 @@
     </div>
 
     <div class="form-group">
-    <asp:TextBox ID="txtHorarioFin" CssClass="form-control" runat="server" ClientIDMode="Static" Text="Horario Fin"></asp:TextBox>
+    <asp:TextBox ID="txtHorarioFin" CssClass="form-control" runat="server" ClientIDMode="Static" TextMode="Time" placeholder="Horario de finalizacion"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="txtHorarioFin" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar un horario."></asp:RequiredFieldValidator>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator4"
               runat="server" ErrorMessage="Por favor ingrese una horario valido HH:MM."
