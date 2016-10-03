@@ -23,25 +23,44 @@
         </div>
     </div>
 
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">
+       Calificar
+    </button>
+
     <!-- Modal -->
-    <div id="miModal" class="modal">
+    <div id="miModal" class="modal fade">
+        <div class="modal-dialog" role="document">
         <!-- Contenido Modal -->
         <div class="modal-content">
-            <span class="close">x</span>
-            <div>
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Calificar Cochera </h4>
+            </div>
+            <div class="modal-body">
                 <%--hidden donde se guarda el id de la reserva elegida para que desde el codebehind se pueda identificar--%>
                 <input type="hidden" id="hdIdReserva" />
-                <asp:DropDownList runat="server" ID="ddlPuntuacion" ClientIDMode="Static">
+                <asp:DropDownList runat="server" ID="ddlPuntuacion" ClientIDMode="Static" CssClass="form-control">
                     <asp:ListItem Text="1" Value="1" />
                     <asp:ListItem Text="2" Value="2" />
                     <asp:ListItem Text="3" Value="3" />
                     <asp:ListItem Text="4" Value="4" />
                     <asp:ListItem Text="5" Value="5" />
                 </asp:DropDownList>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ForeColor="Red" ControlToValidate="ddlPuntuacion" runat="server" ErrorMessage="Debe seleccionar una puntuacion."></asp:RequiredFieldValidator>
-                <asp:Button Text="Confirmar" runat="server" ID="btnConfirmar" ClientIDMode="Static" />
-                <button class="cerrar">Cerrar</button>
             </div>
-        </div>
-    </div>
+            <div class="modal-footer">
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ForeColor="Red" ControlToValidate="ddlPuntuacion" runat="server" ErrorMessage="Debe seleccionar una puntuacion."></asp:RequiredFieldValidator>
+            <asp:Button Text="Confirmar" runat="server" ID="btnConfirmar" ClientIDMode="Static" CssClass="btn btn-primary"/>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+            </div> <!-- /.modal-content -->   
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script type="text/javascript">
+        $('#miModal').on('shown.modal', function () {
+            $('#miModal').focus()
+        })
+    </script>
 </asp:Content>

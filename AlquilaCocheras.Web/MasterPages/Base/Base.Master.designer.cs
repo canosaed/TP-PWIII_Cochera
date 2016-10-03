@@ -38,14 +38,5 @@ namespace AlquilaCocheras.Web.MasterPages {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder_Principal_Base;
-        
-        /// <summary>
-        /// Control UCMapa.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::AlquilaCocheras.Web.MasterPages.UserControlMapa UCMapa;
     }
 }
