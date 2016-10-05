@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Propietarios.Master" AutoEventWireup="true" CodeBehind="cocheras.aspx.cs" Inherits="AlquilaCocheras.Web.propietarios.cocheras" %>
 <%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucm" TagName="UserControlMapa" %>
+<%@ Register Assembly="GMaps" Namespace="Subgurim.Controles" TagPrefix="cc" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-   <%-- <script type="text/javascript" src="../js/custom.js"></script>--%>
+  <%-- <script type="text/javascript" src="../js/app.js"></script>--%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
@@ -18,6 +19,39 @@
     <asp:TextBox ID="txtUbicacion" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUbicacion" ForeColor="Red" ErrorMessage="Debe ingresar una Ubicacion."></asp:RequiredFieldValidator>
     </div>
+
+     <div class="form-group">
+    <asp:Label ID="label5" runat="server" Text="Latitud: "></asp:Label>
+    <asp:TextBox ID="txtLatitud" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="txtLatitud" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una latitud."></asp:RequiredFieldValidator>
+   <asp:RegularExpressionValidator ID="RegularExpressionValidator5"
+              runat="server" ErrorMessage="Por favor ingrese una latitud valida."
+                   ControlToValidate="txtLatitud"
+                  ForeColor="Red"
+                  ValidationExpression="^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}">
+                  </asp:RegularExpressionValidator>
+
+    </div>
+    <div class="form-group">
+    <asp:Label ID="label6" runat="server" Text="Longitud: "></asp:Label>
+    <asp:TextBox ID="txtLongitud" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ControlToValidate="txtLongitud" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una longitud."></asp:RequiredFieldValidator>
+    <asp:RegularExpressionValidator ID="RegularExpressionValidator6"
+              runat="server" ErrorMessage="Por favor ingrese una longitud valida."
+                   ControlToValidate="txtLongitud"
+                  ForeColor="Red"
+                  ValidationExpression="^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}">
+                  </asp:RegularExpressionValidator>
+    </div>
+
+    <%--Mapa <ucm:UserControlMapa ID="UCMapa" runat="server" /> --%>
+    <div class="form-group">
+        <div class="map">
+          <div id="map" class="map">Mapa</div>
+        <%-- <cc:GMap ID="map" runat="server" />--%>
+        </div>
+    </div> 
+
     <%--inicio periodo disponible --%>
     <div class="form-group">
     <asp:Label ID="label2" runat="server" Text="Período Disponible: "></asp:Label>
@@ -75,29 +109,7 @@
     <asp:TextBox ID="txtDescripcion" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="txtDescripcion" ForeColor="Red" runat="server" ErrorMessage="Debe intresar una descripcion."></asp:RequiredFieldValidator>
     </div>
-    <div class="form-group">
-    <asp:Label ID="label5" runat="server" Text="Latitud: "></asp:Label>
-    <asp:TextBox ID="txtLatitud" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="txtLatitud" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una latitud."></asp:RequiredFieldValidator>
-   <asp:RegularExpressionValidator ID="RegularExpressionValidator5"
-              runat="server" ErrorMessage="Por favor ingrese una latitud valida."
-                   ControlToValidate="txtLatitud"
-                  ForeColor="Red"
-                  ValidationExpression="^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}">
-                  </asp:RegularExpressionValidator>
-
-    </div>
-    <div class="form-group">
-    <asp:Label ID="label6" runat="server" Text="Longitud: "></asp:Label>
-    <asp:TextBox ID="txtLongitud" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ControlToValidate="txtLongitud" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una longitud."></asp:RequiredFieldValidator>
-    <asp:RegularExpressionValidator ID="RegularExpressionValidator6"
-              runat="server" ErrorMessage="Por favor ingrese una longitud valida."
-                   ControlToValidate="txtLongitud"
-                  ForeColor="Red"
-                  ValidationExpression="^-?([1-8]?[1-9]|[1-9]0)\.{1}\d{1,6}">
-                  </asp:RegularExpressionValidator>
-    </div>
+   
     <div class="form-group">
     <asp:Label ID="label7" runat="server" Text="Metros Cuadrados: "></asp:Label>
     <asp:TextBox ID="txtMetrosCuadrados" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
@@ -136,10 +148,6 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="fuFoto" ForeColor="Red" ErrorMessage="Debe Subir una imagen"></asp:RequiredFieldValidator>
     </div>
 
-    
-    <ucm:UserControlMapa ID="UCMapa" runat="server" /> 
-    
-
     <div class="action">
     <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static"/>   
     </div>
@@ -150,7 +158,7 @@
                 </div>
             </div>
 
- <script type="text/javascript">
+ <%-- <script type="text/javascript">
      function initMap() {
          // Create a map object and specify the DOM element for display.
          var map = new google.maps.Map(document.getElementById('map'), {
@@ -159,8 +167,50 @@
              mapTypeId: google.maps.MapTypeId.ROADMAP,
              zoom: 16
          });
+         
+         var point = new GLatLng(-34.670173, -58.562059);
+         map.addOverlay(new GMarker(point))
      }
-
  </script>
+     
+ <script type="text/javascript">
+      var map = null;
+      var marker = null;
+
+      function initialize() {
+          var myLatlng = new google.maps.LatLng(20.68009, -101.35403);
+          var myOptions = {
+              zoom: 4,
+              center: myLatlng,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          map = new google.maps.Map($("#map_canvas").get(0), myOptions);
+          marker = new google.maps.Marker({ map: map });
+      }
+
+      $('#search').live('click', function () {
+          var address = $('#address').val();
+          var geocoder = new google.maps.Geocoder();
+          geocoder.geocode({ 'address': address }, geocodeResult);
+      });
+
+      function geocodeResult(results, status) {
+          if (status == 'OK') {
+              map.setCenter(results[0].geometry.location);
+              $('#latitude').text(results[0].geometry.location.lat());
+              $('#longitude').text(results[0].geometry.location.lng());
+              map.fitBounds(results[0].geometry.viewport);
+              marker.setPosition(results[0].geometry.location);
+          } else {
+              alert("Geocoding no tuvo éxito debido a: " + status);
+          }
+      }
+
+      $(document).ready(function () {
+          initialize();
+          gmaps_ads();
+      });       
+</script>  
+     --%>
  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgfnb0bI1YjK4VGG5PMj9fa_vHKj-vfZU&callback=initMap" async defer></script>        
 </asp:Content>

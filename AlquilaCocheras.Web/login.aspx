@@ -38,7 +38,7 @@
             </div>
                     <div class="already">
 			            <p>No tienes una Cuenta?</p>
-			            <a class=" " href="/registracion.aspx">Registrarse como nuevo usuario.</a>
+			            <a class="label-info btn-info info" href="/registracion.aspx">Registrarse como nuevo usuario.</a>
 			        </div>
                 </div>
                     </div>

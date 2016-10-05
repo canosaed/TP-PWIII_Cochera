@@ -7,10 +7,6 @@ body {
   padding: 0px;
 }
 
-#map {
-    height: 300px;
-}
-
 .page-content > .row {
   margin-left: 0px !important;
   margin-right: 0px !important;
