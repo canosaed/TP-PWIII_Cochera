@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Propietarios.Master" AutoEventWireup="true" CodeBehind="cocheras.aspx.cs" Inherits="AlquilaCocheras.Web.propietarios.cocheras" %>
-<%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucm" TagName="UserControlMapa" %>
-<%@ Register Assembly="GMaps" Namespace="Subgurim.Controles" TagPrefix="cc" %>
+<%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucpw3" TagName="UserControlMapa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
     <%-- --%><script type="text/javascript" src="../js/app.js"></script>
@@ -44,14 +43,9 @@
                   </asp:RegularExpressionValidator>
     </div>
 
-    <%--Mapa <ucm:UserControlMapa ID="UCMapa" runat="server" /> --%>
-    <div class="form-group">
-        <div class="map">
-         <%--  <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>--%>
-          <div id="map" class="map">mapa</div>
-      <%--<cc:GMap ID="map" runat="server" CssClass="map" />--%>
-        </div>
-    </div> 
+    <%--Api google Map --%>
+        <ucpw3:UserControlMapa ID="UCMapa" runat="server" />
+    <%--fin mapa --%>
 
     <%--inicio periodo disponible --%>
     <div class="form-group">
@@ -121,7 +115,7 @@
 
     <div class="form-group">	
     <asp:Label ID="label8" runat="server" Text="Tipo Vehículo: "></asp:Label>
-    <asp:ListBox ID="lbTipoVehiculo" runat="server" ClientIDMode="Static" CssClass="form-control custom-scroll">
+    <asp:ListBox ID="lbTipoVehiculo" runat="server" ClientIDMode="Static" CssClass="form-control custom-scroll" >
         <asp:ListItem Value="0">Seleccione:</asp:ListItem>
         <asp:ListItem Value="1">Auto</asp:ListItem>
         <asp:ListItem Value="2">Pickup</asp:ListItem>
@@ -148,10 +142,14 @@
         <asp:FileUpload ID="fuFoto" runat="server" ClientIDMode="Static" CssClass="btn btn-default"/>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="fuFoto" ForeColor="Red" ErrorMessage="Debe Subir una imagen"></asp:RequiredFieldValidator>
     </div>
-
+       <div class="form-group"> 
+        <asp:Label ID="lblResultado" runat="server"></asp:Label>
+       </div>
     <div class="action">
-    <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static"   OnClientClick="MapIt()"/>   
+    <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static" OnClick="btnCrearCochera_Click"/>   
     </div>
+
+    
                                 </div>
                             </div>
                         </div>

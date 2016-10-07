@@ -12,12 +12,20 @@ namespace AlquilaCocheras.Web.propietarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
             /////////////////////////////////
             if (Session["tipo"] == null)
             {
                 Session["url"] = "/propietarios/cocheras.aspx";
                 Response.Redirect("/login.aspx");
+            }
+        }
+
+        protected void btnCrearCochera_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                lblResultado.CssClass = "alert alert-success";
+                lblResultado.Text = "Operación exitosa";
             }
         }
 

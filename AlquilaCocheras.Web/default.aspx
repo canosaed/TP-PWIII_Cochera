@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Anonimo.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="AlquilaCocheras.Web._default" %>
-<%@ Register Src="~/MasterPages/UserControlDefault.ascx" TagPrefix="ucd" TagName="UserControlDefault"%>
+<%@ Register Src="~/MasterPages/UserControlDefault.ascx" TagPrefix="ucpw3" TagName="UserControlBuscador"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
 <%-- <link rel="stylesheet" href="../css/styles.css"/>
@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
     
-    <ucd:UserControlDefault ID="UCDefault" runat="server" /> 
+    <ucpw3:UserControlBuscador ID="UCDefault" runat="server" /> 
 
     <%--    LISTADO  (gridview, repeater o datalist)
     Por cada disponibilidad se deberá mostrar la siguiente información:

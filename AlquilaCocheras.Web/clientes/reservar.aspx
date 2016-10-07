@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Clientes.Master" AutoEventWireup="true" CodeBehind="reservar.aspx.cs" Inherits="AlquilaCocheras.Web.clientes.reservar" %>
-<%@ Register Src="~/MasterPages/UserControlReservar.ascx" TagPrefix="ucr" TagName="UserControlReservar"%>
+<%@ Register Src="~/MasterPages/UserControlDefault.ascx" TagPrefix="ucpw3" TagName="UserControlBuscador"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
    <%--<link rel="stylesheet" href="../css/styles.css"/>--%>
@@ -8,7 +8,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
  
     <%--Inicio User Control--%>
-    <ucr:UserControlReservar ID="UCReservar" runat="server" />
+    <ucpw3:UserControlBuscador ID="UCReservar" runat="server" />
      
     <%--Fin User Control--%>
 

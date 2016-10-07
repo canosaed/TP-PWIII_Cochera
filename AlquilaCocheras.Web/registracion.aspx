@@ -25,6 +25,7 @@
     <div class="form-group">
     <asp:Label ID="label3" runat="server" Text="Email: "></asp:Label>
     <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+        <asp:Label ID="lblMail" runat="server" Text=" "></asp:Label>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
               runat="server" ErrorMessage="Por favor ingrese un email valido."
                    ControlToValidate="txtEmail"
@@ -43,15 +44,17 @@
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ForeColor="Red" ControlToValidate="txtContrasenia" runat="server" ErrorMessage="Debe ingresar una contraseña."></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-8">
+        <div class="col-sm-16">
 			 <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static">
-              <asp:ListItem Text="Cliente"     Value="1"  />
+              <asp:ListItem Text="Cliente"     Value="1" />
               <asp:ListItem Text="Propietario" Value="2" />
              </asp:RadioButtonList>	
 		 </div>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" Display="Static" ErrorMessage="Debe elegir una opción" Text="" ControlToValidate="rblPerfil" ForeColor="Red"></asp:RequiredFieldValidator>
 	</div>
-   
+    <div class="form-group">
     <asp:Label ID="lblResultado" runat="server"></asp:Label>
+    </div>
     <div class="action">
     <asp:Button ID="btnRegistrarUsuario" CssClass="btn btn-primary" runat="server" Text="Registrar usuario" ClientIDMode="Static" OnClick="btnRegistrarUsuario_Click" />
     </div>                       

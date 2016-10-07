@@ -31,13 +31,15 @@
      
     <asp:CompareValidator ID="CompareValidator1" ControlToValidate="txtFechaInicio" ControlToCompare="txtFechaFin" ForeColor="Red" Operator="LessThan" Type="Date" runat="server" ErrorMessage="La fecha de inicio debe ser menor que la de expiracion"></asp:CompareValidator>
    </div>
-    <div class="action">
-    <asp:Button CssClass="btn btn-primary" ID="btnFiltrar" runat="server" Text="Buscar" ClientIDMode="Static" />
-    </div>
+
     <%--si no se encuentran resultados mostrar mensaje "No se encontraron resultados"--%>
-    <div class="alert-info">
+    <div class="from-control">
     <asp:Label ID="lblResultado" runat="server"></asp:Label>
-    </div>                   
+    </div> 
+
+    <div class="action">
+    <asp:Button CssClass="btn btn-primary" ID="btnFiltrar" runat="server" Text="Buscar" ClientIDMode="Static" OnClick="btnFiltrar_Click"/>
+    </div>               
                         </div>
                     </div>			           
                 </div>

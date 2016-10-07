@@ -1,9 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserControlMapa.ascx.cs" Inherits="AlquilaCocheras.Web.MasterPages.UserControlMapa" %>
-<%@ Register Assembly="GMaps" Namespace="Subgurim.Controles" TagPrefix="cc" %>
 
-<div class="form-group">
-    <div class="map">
- <%-- <div id="map" class="map">Mapa</div>--%>
- <cc:GMap ID="map" runat="server" />
-    </div>
-</div> 
+    <div class="form-group">
+        <div class="map">
+         <%--  <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>--%>
+          <div id="map" class="map">mapa</div>
+        </div>
+    </div>  

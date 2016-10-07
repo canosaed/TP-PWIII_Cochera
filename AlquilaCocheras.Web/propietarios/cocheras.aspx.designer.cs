@@ -112,6 +112,15 @@ namespace AlquilaCocheras.Web.propietarios {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator6;
         
         /// <summary>
+        /// Control UCMapa.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AlquilaCocheras.Web.MasterPages.UserControlMapa UCMapa;
+        
+        /// <summary>
         /// Control label2.
         /// </summary>
         /// <remarks>
@@ -398,6 +407,15 @@ namespace AlquilaCocheras.Web.propietarios {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator12;
+        
+        /// <summary>
+        /// Control lblResultado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblResultado;
         
         /// <summary>
         /// Control btnCrearCochera.

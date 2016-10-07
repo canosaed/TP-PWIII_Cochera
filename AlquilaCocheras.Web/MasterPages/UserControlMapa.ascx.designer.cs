@@ -11,14 +11,5 @@ namespace AlquilaCocheras.Web.MasterPages {
     
     
     public partial class UserControlMapa {
-        
-        /// <summary>
-        /// Control map.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::Subgurim.Controles.GMap map;
     }
 }

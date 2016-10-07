@@ -41,6 +41,10 @@ margin-right:auto;
 #rblPerfil tr{
 display:inline-block; 
 padding: 3px;
+margin:5px;
+}
+#rblPerfil [type=radio] {
+margin:2px;
 }
 #btnLogin{    
 margin-left:auto;

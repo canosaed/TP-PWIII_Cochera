@@ -13,5 +13,13 @@ namespace AlquilaCocheras.Web.MasterPages
         {
 
         }
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            if (txtUbicacion.Text.ToLower() == "san justo")
+            {
+                lblResultado.CssClass = "alert alert-info";
+                lblResultado.Text = "No se encontraron resultados";
+            }
+        }
     }
 }

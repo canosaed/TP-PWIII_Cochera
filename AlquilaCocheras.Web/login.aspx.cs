@@ -21,18 +21,25 @@ namespace AlquilaCocheras.Web
                 //implementar logica de cliente
                 Session["tipo"] = "Cliente";
                 if (Session["url"] != null) { string url = Session["url"].ToString(); Response.Redirect(url); }
-                Response.Redirect("clientes/reservas.aspx");
+                lblResultado.CssClass = "alert alert-success";
                 lblResultado.Text = "Usuario correcto.";
+                Response.Redirect("clientes/reservas.aspx");
+                
             }
             else if (txtEmail.Text == "propietario@gmail.com" && txtContrasenia.Text == "Password1")
             {
                 //implementar logica de propietario
                 Session["tipo"] = "Propietario";
                 if (Session["url"] != null) { string url = Session["url"].ToString(); Response.Redirect(url); }
-                Response.Redirect("propietarios/reservas.aspx");
+                lblResultado.CssClass = "alert alert-success";
                 lblResultado.Text = "Usuario correcto.";
+                Response.Redirect("propietarios/reservas.aspx");
             }
-            else { lblResultado.Text = "Usuario y/o Contraseña inválidos."; }
+            else 
+            {
+                lblResultado.CssClass = "alert alert-danger";
+                lblResultado.Text = "Usuario y/o Contraseña inválidos."; 
+            }
         }
     }
 }

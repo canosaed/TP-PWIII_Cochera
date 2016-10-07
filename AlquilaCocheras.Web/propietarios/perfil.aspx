@@ -24,7 +24,7 @@
     </div>
     <div class="form-group">
     <asp:Label ID="label3" runat="server" Text="Email: "></asp:Label>
-    <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" ClientIDMode="Static" Enabled="false" ></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtEmail" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar un email"></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
@@ -41,20 +41,20 @@
     </div>
                             <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtContrasenia"  ControlToCompare="txtConfContrasenia" ForeColor="Red" ErrorMessage="Las contraseñas deben concidir"></asp:CompareValidator>
     <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-8">
+        <div class="col-sm-16">
     <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static" CssClass="checkbox-inline">
         <asp:ListItem Text=" Cliente     " Value="1" />
         <asp:ListItem Text=" Propietario " Value="2" />
     </asp:RadioButtonList>
         </div>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="rblPerfil" ForeColor="Red" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="rblPerfil" ForeColor="Red" runat="server" ErrorMessage="Debe elegir una opción"></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
     <asp:Label ID="lblResultado" runat="server"></asp:Label>
     </div>
     <div class="div-btn">
-    <asp:Button ID="btnActualizar" CssClass="btn btn-primary" runat="server" Text="Actualizar perfil" ClientIDMode="Static" />
-    <asp:Button ID="btnCancelar" CssClass="btn btn-danger" runat="server" Text="Cancelar" ClientIDMode="Static" />
+    <asp:Button ID="btnActualizar" CssClass="btn btn-primary" runat="server" Text="Actualizar perfil" ClientIDMode="Static" OnClick="btnActualizar_Click"/>
+    <asp:Button ID="btnCancelar" CssClass="btn btn-danger" runat="server" Text="Cancelar" ClientIDMode="Static" OnClick="btnCancelar_Click"/>
     </div>
 
                                 </div>

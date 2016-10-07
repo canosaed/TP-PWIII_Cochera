@@ -13,5 +13,10 @@ namespace AlquilaCocheras.Web.MasterPages
         {
 
         }
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("/default.aspx");
+        }
     }
 }
