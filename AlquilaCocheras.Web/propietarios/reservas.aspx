@@ -14,7 +14,7 @@
     <div class="form-group">	
         <asp:Label ID="label1" runat="server" Text="Período Disponible: "></asp:Label>
    
-        <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Inicio" TextMode="Date"></asp:TextBox>
+        <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Inicio" TextMode="Date" ></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtFechaInicio" ForeColor="Red" runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."></asp:RequiredFieldValidator>
     
         <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Fin" TextMode="Date"></asp:TextBox>

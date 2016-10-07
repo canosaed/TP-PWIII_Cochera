@@ -3,7 +3,7 @@
 <%@ Register Assembly="GMaps" Namespace="Subgurim.Controles" TagPrefix="cc" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-  <%-- <script type="text/javascript" src="../js/app.js"></script>--%>
+    <%-- --%><script type="text/javascript" src="../js/app.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
@@ -22,7 +22,7 @@
 
      <div class="form-group">
     <asp:Label ID="label5" runat="server" Text="Latitud: "></asp:Label>
-    <asp:TextBox ID="txtLatitud" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox ID="txtLatitud" CssClass="form-control" runat="server" ClientIDMode="Static" ></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" ControlToValidate="txtLatitud" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una latitud."></asp:RequiredFieldValidator>
    <asp:RegularExpressionValidator ID="RegularExpressionValidator5"
               runat="server" ErrorMessage="Por favor ingrese una latitud valida."
@@ -34,7 +34,7 @@
     </div>
     <div class="form-group">
     <asp:Label ID="label6" runat="server" Text="Longitud: "></asp:Label>
-    <asp:TextBox ID="txtLongitud" CssClass="form-control" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox ID="txtLongitud" CssClass="form-control" runat="server" ClientIDMode="Static" ></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" ControlToValidate="txtLongitud" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una longitud."></asp:RequiredFieldValidator>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator6"
               runat="server" ErrorMessage="Por favor ingrese una longitud valida."
@@ -47,8 +47,9 @@
     <%--Mapa <ucm:UserControlMapa ID="UCMapa" runat="server" /> --%>
     <div class="form-group">
         <div class="map">
-          <div id="map" class="map">Mapa</div>
-        <%-- <cc:GMap ID="map" runat="server" />--%>
+         <%--  <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>--%>
+          <div id="map" class="map">mapa</div>
+      <%--<cc:GMap ID="map" runat="server" CssClass="map" />--%>
         </div>
     </div> 
 
@@ -56,7 +57,7 @@
     <div class="form-group">
     <asp:Label ID="label2" runat="server" Text="Período Disponible: "></asp:Label>
     
-    <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static" TextMode="Date" placeholder="Fecha de inicio"></asp:TextBox>
+    <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static"  PlaceHolder="Fecha de inicio" TextMode="Date"></asp:TextBox>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
                    runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."
                    ControlToValidate="txtFechaInicio"
@@ -69,7 +70,7 @@
         ErrorMessage="Debe ingresar una fecha de inicio." ClientIDMode="Static">
     </asp:RequiredFieldValidator>
    
-    <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static" TextMode="Date" placeholder="Fecha de finalización"></asp:TextBox>
+    <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static" PlaceHolder="Fecha de finalización" TextMode="Date"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtFechaFin" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una fecha de expiracion."></asp:RequiredFieldValidator>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator1"
               runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."
@@ -149,7 +150,7 @@
     </div>
 
     <div class="action">
-    <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static"/>   
+    <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static"   OnClientClick="MapIt()"/>   
     </div>
                                 </div>
                             </div>
@@ -157,60 +158,10 @@
                     </div>
                 </div>
             </div>
-
- <%-- <script type="text/javascript">
-     function initMap() {
-         // Create a map object and specify the DOM element for display.
-         var map = new google.maps.Map(document.getElementById('map'), {
-             center: { lat: -34.670173, lng: -58.562059}, 
-             scrollwheel: true,
-             mapTypeId: google.maps.MapTypeId.ROADMAP,
-             zoom: 16
-         });
-         
-         var point = new GLatLng(-34.670173, -58.562059);
-         map.addOverlay(new GMarker(point))
-     }
+    
+  <%--<script type="text/javascript">
  </script>
-     
- <script type="text/javascript">
-      var map = null;
-      var marker = null;
-
-      function initialize() {
-          var myLatlng = new google.maps.LatLng(20.68009, -101.35403);
-          var myOptions = {
-              zoom: 4,
-              center: myLatlng,
-              mapTypeId: google.maps.MapTypeId.ROADMAP
-          };
-          map = new google.maps.Map($("#map_canvas").get(0), myOptions);
-          marker = new google.maps.Marker({ map: map });
-      }
-
-      $('#search').live('click', function () {
-          var address = $('#address').val();
-          var geocoder = new google.maps.Geocoder();
-          geocoder.geocode({ 'address': address }, geocodeResult);
-      });
-
-      function geocodeResult(results, status) {
-          if (status == 'OK') {
-              map.setCenter(results[0].geometry.location);
-              $('#latitude').text(results[0].geometry.location.lat());
-              $('#longitude').text(results[0].geometry.location.lng());
-              map.fitBounds(results[0].geometry.viewport);
-              marker.setPosition(results[0].geometry.location);
-          } else {
-              alert("Geocoding no tuvo éxito debido a: " + status);
-          }
-      }
-
-      $(document).ready(function () {
-          initialize();
-          gmaps_ads();
-      });       
-</script>  
-     --%>
- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgfnb0bI1YjK4VGG5PMj9fa_vHKj-vfZU&callback=initMap" async defer></script>        
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>   --%> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq6s79xPm1V6KwH0f0CgdJyINscJmMCCQ&libraries=places&callback=initAutocomplete"
+         async defer></script>
 </asp:Content>
