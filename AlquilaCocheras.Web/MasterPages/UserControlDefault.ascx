@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UserControlDefault.ascx.cs" Inherits="AlquilaCocheras.Web.MasterPages.UserControlDefault" %>
+<%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucpw3" TagName="UserControlMapa" %>
  <%--Esto va en un UserControl--%>
     <%--Inicio User Control--%>
 
@@ -46,5 +47,58 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+<section class="bg-primary">
+    <div class="container">
+        <h5>Resultado de la busqueda</h5>
+        <div class="row">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
+            <Columns>
+            <%--boton reservar...--%>
+            <asp:TemplateField ItemStyle-HorizontalAlign="Center" >
+                <ItemTemplate>
+                     <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-sm btn-outline page-scroll">Reservar</asp:HyperLink>
+                </ItemTemplate>
+            </asp:TemplateField> 
+                 
+             <%--Api google Map --%>   
+            <asp:TemplateField HeaderText="Ubicación Mapa" ItemStyle-CssClass="mapa">
+                <ItemTemplate>
+                    <ucpw3:UserControlMapa ID="UCMapa" runat="server" />                
+                </ItemTemplate>
+            </asp:TemplateField>           
+
+            <%--campos no editables...--%>
+            <asp:BoundField DataField="ubicacion" HeaderText="Ubicacion" InsertVisible="False" ReadOnly="True" />
+            <asp:BoundField DataField="tipo" HeaderText="Tipo" ReadOnly="True" />
+            <asp:BoundField DataField="HoraInicio" HeaderText="Hora de inicio" ReadOnly="True" />
+            <asp:BoundField DataField="HoraFin" HeaderText="Hora de finalizacion" ReadOnly="True" />
+            <asp:BoundField DataField="FechaInicio" HeaderText="Fecha de inicio" ReadOnly="True" />
+            <asp:BoundField DataField="FechaFin" HeaderText="Fecha de Finalizado" ReadOnly="True" />
+            <%--<asp:BoundField DataField="Latitud" HeaderText="Latitud" ReadOnly="True" />
+            <asp:BoundField DataField="Longitud" HeaderText="Longitud" ReadOnly="True" /> --%>
+            <asp:BoundField DataField="Precio" HeaderText="Precio" ReadOnly="True" />
+             <%--campos editables...--%>
+            <asp:TemplateField HeaderText="Latitud">
+                <ItemTemplate>
+                    <asp:Label id="lblLatitud" runat="server"></asp:Label>
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtLatitud" runat="server" CssClass="form-control" ></asp:TextBox>
+                </EditItemTemplate>
+            </asp:TemplateField>
+            <asp:TemplateField HeaderText="Longitud">
+                <ItemTemplate>
+                    <asp:Label id="lblLongitud" runat="server"></asp:Label>
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:TextBox ID="txtLongitud" runat="server" CssClass="form-control" ></asp:TextBox>
+                </EditItemTemplate>
+            </asp:TemplateField>
+            
+        </Columns>
+        </asp:GridView >
+       </div>
+   </div>
+</section>  
     <%--Fin User Control--%>

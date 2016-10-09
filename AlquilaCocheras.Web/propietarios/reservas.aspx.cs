@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +18,21 @@ namespace AlquilaCocheras.Web.propietarios
                 Session["url"] = "/propietarios/reservas.aspx";
                 Response.Redirect("/login.aspx");
             }
+
+            List<Reserva> resultado = new List<Reserva>();
+            Reserva miReserva = new Reserva();
+
+            miReserva.ubicacion = "Haedo";
+            miReserva.FechaInicio = "20/10/2016";
+            miReserva.FechaFin = "22/10/2016";
+            miReserva.Precio = 50.00;
+            
+            resultado.Add(miReserva);
+
+            GridView1.DataSource = resultado;
+            GridView1.DataBind();
+            //GridView1.SelectedIndex = 0;
         }
+
     }
 }

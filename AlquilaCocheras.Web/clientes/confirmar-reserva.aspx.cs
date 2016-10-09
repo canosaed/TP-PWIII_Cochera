@@ -17,6 +17,20 @@ namespace AlquilaCocheras.Web.clientes
                 Session["url"] = "/clientes/confirmar-reserva.aspx";
                 Response.Redirect("/login.aspx");
             }
+
+        }
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            String fechaInicio = txtFechaInicio.Text.Substring(0, 2);
+            String fechaFin = txtFechaFin.Text.Substring(0, 2);
+            String mesInicio = txtFechaInicio.Text.Substring(4, 6);
+            String mesFin = txtFechaFin.Text.Substring(4, 6);
+            if (Int32.Parse(fechaInicio) < Int32.Parse(fechaFin))/*|| Int32.Parse(mesInicio) < Int32.Parse(mesFin) && Int32.Parse(fechaFin ) < Int32.Parse(fechaInicio)*/
+            {
+
+                args.IsValid = false;
+
+            }
         }
     }
 }

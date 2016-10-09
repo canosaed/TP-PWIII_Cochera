@@ -15,19 +15,41 @@
             puntuación 
         
         --%>
-   
-    <div class="col-md-2 col-md-offset-5">
-         <div class="content-wrap">
-	       <span>
-    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-sm btn-outline page-scroll btn-block">Reservar</asp:HyperLink>
-            </span>
-        </div>
-    </div>
+    <section class="bg-primary">
+    <div class="container">
+        <h5>Resultado de la busqueda</h5>
+        <div class="row">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
+            <Columns>
+            <%--boton reservar...--%>
+            <asp:TemplateField ItemStyle-HorizontalAlign="Center" >
+                <ItemTemplate>
+                     <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-sm btn-outline page-scroll">Reservar</asp:HyperLink>
+                </ItemTemplate>
+            </asp:TemplateField> 
+             
+             <%--Boton de puntuacion...--%>
+            <asp:TemplateField ItemStyle-HorizontalAlign="Center"  HeaderText="Puntuar">
+                <ItemTemplate>
+                    <button type="button" class="btn btn-sm btn-primary btn-outline page-scroll" data-toggle="modal" data-target="#miModal" value="Calificar">
+                    Calificar
+                    </button>
+                </ItemTemplate>
+            </asp:TemplateField>
 
-    <button type="button" class="btn btn-sm btn-primary btn-outline page-scroll" data-toggle="modal" data-target="#miModal">
-       Calificar
-    </button>
-
+            <%--campos no editables...--%>
+            <asp:BoundField DataField="HoraInicio" HeaderText="Hora de inicio" ReadOnly="True" />
+            <asp:BoundField DataField="HoraFin" HeaderText="Hora de finalizacion" ReadOnly="True" />
+            <asp:BoundField DataField="FechaInicio" HeaderText="Fecha de inicio" ReadOnly="True" />
+            <asp:BoundField DataField="FechaFin" HeaderText="Fecha de Finalizado" ReadOnly="True" />
+            <asp:BoundField DataField="Precio" HeaderText="Precio" ReadOnly="True" />
+            <asp:BoundField DataField="Puntuacion" HeaderText="Puntuacion" ReadOnly="True" />
+        </Columns>
+        </asp:GridView >
+       </div>
+   </div>
+</section>  
+  
     <!-- Modal -->
     <div id="miModal" class="modal fade">
         <div class="modal-dialog" role="document">

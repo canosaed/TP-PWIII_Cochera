@@ -40,7 +40,7 @@
                         <section class="text-center">
 		                    <p>No tienes una Cuenta?</p>
 	                        <a class="btn btn-outline btn-xl page-scroll" href="/registracion.aspx">Registrarse como nuevo usuario.</a>
-                         </section>
+                        </section>
                 </div>
            </div>
       </div>

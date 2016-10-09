@@ -34,6 +34,7 @@
                   ForeColor="Red"
                   ValidationExpression="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
                   </asp:RegularExpressionValidator> 
+    <asp:CustomValidator  ValidationGroup="fecha" ID="CustomValidator1" OnServerValidate="CustomValidator1_ServerValidate" ControlToValidate="txtFechaFin" ForeColor="Red" runat="server" ErrorMessage="La fecha de Fin debe ser posterior a FechaInicio "></asp:CustomValidator>
     </div>
     <div class="form-group">
     <asp:Label ID="label3" runat="server" Text="Hora de Entrada: "></asp:Label>

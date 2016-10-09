@@ -2,7 +2,7 @@
 <%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucpw3" TagName="UserControlMapa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <%-- --%><script type="text/javascript" src="../js/app.js"></script>
+    <%-- <script type="text/javascript" src="../js/app.js"></script>--%>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
@@ -44,7 +44,11 @@
     </div>
 
     <%--Api google Map --%>
-        <ucpw3:UserControlMapa ID="UCMapa" runat="server" />
+    <div class="form-group">
+        <div class="map img-responsive">
+            <ucpw3:UserControlMapa ID="UCMapa" runat="server" />
+        </div>
+    </div>
     <%--fin mapa --%>
 
     <%--inicio periodo disponible --%>
@@ -156,10 +160,5 @@
                     </div>
                 </div>
             </div>
-    
-  <%--<script type="text/javascript">
- </script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>   --%> 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq6s79xPm1V6KwH0f0CgdJyINscJmMCCQ&libraries=places&callback=initAutocomplete"
-         async defer></script>
+<%--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>   --%> 
 </asp:Content>
