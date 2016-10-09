@@ -146,7 +146,7 @@
         <asp:Label ID="lblResultado" runat="server"></asp:Label>
        </div>
     <div class="action">
-    <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary" runat="server" Text="Crear Cochera" ClientIDMode="Static" OnClick="btnCrearCochera_Click"/>   
+    <asp:Button ID="btnCrearCochera" CssClass="btn btn-primary btn-outline btn-xl page-scroll" runat="server" Text="Crear Cochera" ClientIDMode="Static" OnClick="btnCrearCochera_Click"/>   
     </div>
 
     

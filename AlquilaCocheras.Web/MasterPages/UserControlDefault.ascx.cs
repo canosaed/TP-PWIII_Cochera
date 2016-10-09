@@ -15,11 +15,21 @@ namespace AlquilaCocheras.Web.MasterPages
         }
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
-            if (txtUbicacion.Text.ToLower() == "san justo")
-            {
-                lblResultado.CssClass = "alert alert-info";
-                lblResultado.Text = "No se encontraron resultados";
-            }
+                if (txtUbicacion.Text == "" && txtFechaFin.Text == "" && txtFechaInicio.Text == "")
+                {
+                    lblResultado.CssClass = "alert alert-info";
+                    lblResultado.Text = "Debe completar al menos uno de los campos";
+                }
+                else if (txtUbicacion.Text.ToLower() == "san justo")
+                {
+                    lblResultado.CssClass = "alert alert-info";
+                    lblResultado.Text = "No se encontraron resultados";
+                }
+                else
+                {
+                    lblResultado.CssClass = " ";
+                    lblResultado.Text = "<h5>Buscando ...</h5>";
+                }
         }
     }
 }

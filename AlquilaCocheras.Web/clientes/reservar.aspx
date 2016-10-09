@@ -2,8 +2,8 @@
 <%@ Register Src="~/MasterPages/UserControlDefault.ascx" TagPrefix="ucpw3" TagName="UserControlBuscador"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-   <%--<link rel="stylesheet" href="../css/styles.css"/>--%>
-    <link rel="stylesheet" href="../css/app.css"/>
+   <%--<link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="../css/app.css"/>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
  
@@ -27,7 +27,7 @@
     <div class="col-md-2 col-md-offset-5">
          <div class="content-wrap">
 	       <span>
-    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-md btn-block btn-default">Reservar</asp:HyperLink>
+    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-sm btn-outline page-scroll">Reservar</asp:HyperLink>
             </span>
         </div>
     </div>

@@ -1,6 +1,7 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Base/Base.Master" AutoEventWireup="true" CodeBehind="Propietarios.master.cs" Inherits="AlquilaCocheras.Web.MasterPages.Propietarios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head_Base" runat="server">
-     <link rel="stylesheet" href="../css/styles.css"/>
+     <link rel="stylesheet" href="../css/new-age.css"/>
+    <link rel="stylesheet" href="../css/styles.css" />
      <link rel="stylesheet" href="../css/app.css"/>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder_Head" runat="server">
     </asp:ContentPlaceHolder>    
@@ -9,14 +10,24 @@
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+      </button>
       <a class="navbar-brand" href="#">AlquilaCochera</a>
     </div>
+    <div id="navbar" class="nav navbar-collapse collapse">
     <ul class="nav navbar-nav">
       <li ><a href="../propietarios/cocheras.aspx">Crear cochera​ </a></li>
       <li><a href="../propietarios/perfil.aspx">Perfil</a></li> 
       <li class="active"><a href="../propietarios/reservas.aspx">Reservas</a></li>
-      <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li> 
     </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Logout</asp:LinkButton></li> 
+        </ul>
+    </div>
   </div>
 </nav>
     <asp:ContentPlaceHolder ID="ContentPlaceHolder_Principal" runat="server">

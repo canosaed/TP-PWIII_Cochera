@@ -3,11 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
     <%-- <link rel="stylesheet" href="../css/styles.css"/>
          <link rel="stylesheet" href="../css/app.css"/> --%>
+    <script type="text/javascript" src="../js/app.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
     <div class="page-content container">
 		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
+			<div class="col-md-6 col-md-offset-3">
 				<div class="login-wrapper">
 			        <div class="box">
 			            <div class="content-wrap">

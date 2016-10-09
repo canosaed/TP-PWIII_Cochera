@@ -56,7 +56,7 @@
     <asp:Label ID="lblResultado" runat="server"></asp:Label>
     </div>
     <div class="action">
-    <asp:Button ID="btnRegistrarUsuario" CssClass="btn btn-primary" runat="server" Text="Registrar usuario" ClientIDMode="Static" OnClick="btnRegistrarUsuario_Click" />
+    <asp:Button ID="btnRegistrarUsuario" CssClass="btn btn-primary btn-outline btn-xl page-scroll" runat="server" Text="Registrar usuario" ClientIDMode="Static" OnClick="btnRegistrarUsuario_Click" />
     </div>                       
                             </div>
                        </div>

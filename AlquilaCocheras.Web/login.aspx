@@ -29,19 +29,19 @@
     <%--Si el usuario no existe o si no coinciden las credenciales, mostrar mensaje "Usuario y/o Contraseña inválidos"--%>
     <asp:Label ID="lblResultado" runat="server"></asp:Label>
     <div class="action">
-    <asp:Button ID="btnLogin" CssClass="btn btn-primary signup" runat="server" Text="Ingresar" ClientIDMode="Static" OnClick="btnLogin_Click" />
+    <asp:Button ID="btnLogin" CssClass="btn btn-primary btn-outline btn-xl page-scroll" runat="server" Text="Ingresar" ClientIDMode="Static" OnClick="btnLogin_Click" />
    </div>
                      
     
        
-         </div>
-            </div>
-                    <div class="already">
-			            <p>No tienes una Cuenta?</p>
-			            <a class="label-info btn-info info" href="/registracion.aspx">Registrarse como nuevo usuario.</a>
-			        </div>
+                             </div>
+                         </div>
+                     </div>
+                        <section class="text-center">
+		                    <p>No tienes una Cuenta?</p>
+	                        <a class="btn btn-outline btn-xl page-scroll" href="/registracion.aspx">Registrarse como nuevo usuario.</a>
+                         </section>
                 </div>
-                    </div>
-                        </div>
-                            </div>
+           </div>
+      </div>
 </asp:Content>

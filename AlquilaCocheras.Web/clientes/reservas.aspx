@@ -19,12 +19,12 @@
     <div class="col-md-2 col-md-offset-5">
          <div class="content-wrap">
 	       <span>
-    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-md btn-block btn-default">Reservar</asp:HyperLink>
+    <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-sm btn-outline page-scroll btn-block">Reservar</asp:HyperLink>
             </span>
         </div>
     </div>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">
+    <button type="button" class="btn btn-sm btn-primary btn-outline page-scroll" data-toggle="modal" data-target="#miModal">
        Calificar
     </button>
 

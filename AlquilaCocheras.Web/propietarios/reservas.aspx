@@ -21,7 +21,7 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtFechaFin" ForeColor="Red" runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."></asp:RequiredFieldValidator>
 
         <div class="action">
-        <asp:Button ID="btnFiltrar" CssClass="btn btn-primary" runat="server" Text="Filtrar" ClientIDMode="Static"/>   
+        <asp:Button ID="btnFiltrar" CssClass="btn btn-primary btn-outline btn-xl page-scroll" runat="server" Text="Filtrar" ClientIDMode="Static"/>   
         </div>
     </div>
                         </div>
