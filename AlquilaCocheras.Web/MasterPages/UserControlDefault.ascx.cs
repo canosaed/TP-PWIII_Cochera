@@ -30,6 +30,31 @@ namespace AlquilaCocheras.Web.MasterPages
                     lblResultado.CssClass = " ";
                     lblResultado.Text = "<h5>Buscando ...</h5>";
                 }
+            ////////////////////////////////////////
+                if (txtUbicacion.Text.ToLower() != "haedo")
+                {
+                    lblResultado.Text = "No se encontraron resultados";
+                }
+                else if (txtUbicacion.Text.ToLower() == "haedo")
+                {
+                    List<Cochera> resultado = new List<Cochera>();
+                    Cochera miCochera = new Cochera();
+                    miCochera.ubicacion = "Haedo";
+                    miCochera.tipo = "Autos";
+                    miCochera.HoraInicio = "15:00";
+                    miCochera.HoraFin = "16:00";
+                    miCochera.FechaInicio = "20/10/2016";
+                    miCochera.FechaFin = "22/10/2016";
+                    miCochera.Latitud = 20.22;
+                    miCochera.Longitud = 32.33;
+                    miCochera.Precio = 50.00;
+                    resultado.Add(miCochera);
+
+
+                    GridView1.DataSource = resultado;
+                    GridView1.DataBind();
+                    GridView1.SelectedIndex = 0;
+                }
         }
     }
 }
