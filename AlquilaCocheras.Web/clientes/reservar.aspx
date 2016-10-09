@@ -23,7 +23,7 @@
     la puntuación promedio        
     y el link a confirmar reserva que esta agregado abajo como asp:HyperLink, 
         donde deberán cambiarle dinamicamente el link y ponerle el idcochera correspondiente
-    --%>
+    
     <div class="col-md-2 col-md-offset-5">
          <div class="content-wrap">
 	       <span>
@@ -31,6 +31,6 @@
             </span>
         </div>
     </div>
-
+--%>
     
 </asp:Content>
