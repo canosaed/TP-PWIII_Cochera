@@ -66,18 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\ClassLibrary1.csproj" />
+    <Content Include="css\app.css" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
-    <Content Include="css\cocheras.css" />
-    <Content Include="css\custom.css" />
-    <Content Include="css\login.css" />
-    <Content Include="css\perfil.css" />
-    <Content Include="css\registracion.css" />
-    <Content Include="css\reservar.css" />
-    <Content Include="css\reservas.css" />
-    <Content Include="css\reservasPropietarios.css" />
+    <Content Include="css\new-age.css" />
     <Content Include="css\styles.css" />
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.js" />
@@ -111,6 +106,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Class1.cs" />
     <Compile Include="clientes\confirmar-reserva.aspx.cs">
       <DependentUpon>confirmar-reserva.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,6 +128,7 @@
     <Compile Include="clientes\reservas.aspx.designer.cs">
       <DependentUpon>reservas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\Cochera.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -231,8 +228,10 @@
     <Compile Include="registracion.aspx.designer.cs">
       <DependentUpon>registracion.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Code\Reserva.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="clientes\App_Data\" />
     <Folder Include="imagenes\cocheras\" />
   </ItemGroup>
   <ItemGroup>
