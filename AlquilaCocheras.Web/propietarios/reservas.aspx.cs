@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -13,16 +12,7 @@ namespace AlquilaCocheras.Web.propietarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
-                string fechaConFormato = string.Empty;
-                //formatea la fecha si viene en formato yyyy-mm-dd
-                fechaConFormato = Regex.Replace(txtFechaInicio.Text,
-                @"\b(?<yyyy>\d{4})-(?<mm>\d{1,2})-(?<dd>\d{1,2})\b",
-                "${dd}/${mm}/${yyyy}");
-                txtFechaInicio.Text = fechaConFormato;
-            }
-            
+
             if (Session["tipo"] == null)
             {
                 Session["url"] = "/propietarios/reservas.aspx";
@@ -36,7 +26,7 @@ namespace AlquilaCocheras.Web.propietarios
             miReserva.FechaInicio = "20/10/2016";
             miReserva.FechaFin = "22/10/2016";
             miReserva.Precio = 50.00;
-            
+
             resultado.Add(miReserva);
 
             GridView1.DataSource = resultado;
@@ -44,5 +34,13 @@ namespace AlquilaCocheras.Web.propietarios
             //GridView1.SelectedIndex = 0;
         }
 
+        protected void CustomValidator2_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            DateTime fechaInicio = DateTime.Parse(txtFechaInicio.Text);
+            DateTime fechaFin = DateTime.Parse(txtFechaFin.Text);
+            TimeSpan ts = fechaFin - fechaInicio;
+            int differenceInDays = ts.Days;
+            if (differenceInDays >= 90) { args.IsValid = false; }
+        }
     }
 }

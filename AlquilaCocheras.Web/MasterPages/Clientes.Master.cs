@@ -11,8 +11,8 @@ namespace AlquilaCocheras.Web.MasterPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["tipo2"] = "Cliente";
-            if (Session["tipo"] != Session["tipo2"])
+            
+            if (Session["tipo"].ToString() != "Cliente")
             {
                 Response.Redirect("/propietarios/reservas.aspx");
             }

@@ -43,10 +43,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GMaps, Version=4.1.0.5, Culture=neutral, PublicKeyToken=564d55b144e7aa5a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\GMaps.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -74,15 +70,22 @@
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\cocheras.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\perfil.css" />
+    <Content Include="css\registracion.css" />
+    <Content Include="css\reservar.css" />
+    <Content Include="css\reservas.css" />
+    <Content Include="css\reservasPropietarios.css" />
     <Content Include="css\styles.css" />
-    <Content Include="css\new-age.css" />
-    <Content Include="css\app.css" />
-    <Content Include="datos\ClassLibrary1.csproj" />
     <Content Include="js\app.js" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\npm.js" />
+    <Content Include="js\confirmar-reserva.js" />
     <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\npm.js" />
     <Content Include="MasterPages\UserControlDefault.ascx" />
     <Content Include="MasterPages\UserControlMapa.ascx" />
     <Content Include="packages.config" />
@@ -129,8 +132,6 @@
     <Compile Include="clientes\reservas.aspx.designer.cs">
       <DependentUpon>reservas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="datos\Cochera.cs" />
-    <Compile Include="datos\Reserva.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,6 +240,12 @@
     <Content Include="css\bootstrap-theme.min.css.map" />
     <Content Include="css\bootstrap.css.map" />
     <Content Include="css\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
+      <Project>{ef076886-f271-4b50-939a-bfa3955a2c2b}</Project>
+      <Name>ClassLibrary1</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

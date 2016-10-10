@@ -21,13 +21,13 @@ namespace AlquilaCocheras.Web
 
             if (mail == consultaSql)
             {
-                lblMail.CssClass = "alert alert-danger";
-                lblMail.Text = "No se pudo completar la registración, existe otro usuario con el email ingresado.";
+                lblpepe.CssClass = "alert alert-danger";
+                lblpepe.Text = "No se pudo completar la registración, existe otro usuario con el email ingresado.";
             }
             else
             {
-                lblMail.CssClass = "alert alert-success";
-                lblMail.Text = "El email es corecto";
+                lblpepe.CssClass = "alert alert-success";
+                lblpepe.Text = "El email es corecto";
                 lblResultado.CssClass = "alert alert-success";
                 lblResultado.Text = "Registracion exitosa dirijase al  <a class='btn btn-link' href='login.aspx'>Login</a>";
             }

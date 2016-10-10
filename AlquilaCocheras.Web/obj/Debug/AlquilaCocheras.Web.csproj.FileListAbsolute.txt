@@ -136,3 +136,70 @@ C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Mi
 C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.csprojResolveAssemblyReference.cache
 C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.dll
 C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.pdb
+C:\Users\Tomas\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.dll
+C:\Users\Tomas\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.pdb
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\csc.exe
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\vbc.exe
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.dll.config
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.pdb
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.pdb
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.csprojResolveAssemblyReference.cache
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_Cochera (1)\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.pdb
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\csc.exe
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\vbc.exe
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.dll.config
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.pdb
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.pdb
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.csprojResolveAssemblyReference.cache
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.dll
+C:\Users\lucas\Downloads\Unlam 3 ano\TP-PWIII_CocheraDomingo\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.pdb
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\csc.exe
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\vbc.exe
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\AlquilaCocheras.Web.pdb
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\ClassLibrary1.pdb
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.csprojResolveAssemblyReference.cache
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.dll
+C:\Users\Eddy\Desktop\TP-PWIII_Cochera\AlquilaCocheras.Web\obj\Debug\AlquilaCocheras.Web.pdb

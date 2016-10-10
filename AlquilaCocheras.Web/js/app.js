@@ -1,25 +1,4 @@
-﻿/////////////////////////////////////////
-///Clacular precio final////////////////
-var fin = document.getElementById('txtFechaFin');
-var inicio = document.getElementById('txtFechaInicio');
-var dias = function DiferenciaDeDias(fin, inicio) {
-   return fin - inicio;
-};
-var horas = function DiferenciaDeHoras(salida, entrada) {
-    return entrada - salida;
-};
-var horasTotales = horas * dias;
-
-$('#lblPrecioHora').keyup(function () {
-    var divParent = $(this).closest('div');
- var qty = horasTotales;
- var price = $('#lblPrecioHora');
-if (qty >= 0 && price >= 0)
-    $('#lblPrecioTotal',
-   divParent).text(qty*price);
-});
-
-//////////////////////////
+﻿//////////////////////////
 $('#miModal').on('shown.modal', function () {
     $('#miModal').focus()
 });

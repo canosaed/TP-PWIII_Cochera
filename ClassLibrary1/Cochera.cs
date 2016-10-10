@@ -18,6 +18,6 @@ namespace ClassLibrary1
         public Double Longitud { get; set; }
         public Double Precio { get; set; }
         public Double Puntuacion { get; set; }
-
+        public String imagen { get; set; }
     }
 }

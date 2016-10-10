@@ -12,7 +12,7 @@ namespace AlquilaCocheras.Web.MasterPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
- 
+
         }
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
@@ -35,7 +35,7 @@ namespace AlquilaCocheras.Web.MasterPages
                     
                     List<Cochera> resultado = new List<Cochera>();
                     Cochera miCochera = new Cochera();
-                    
+                
                     miCochera.ubicacion = "Haedo";
                     miCochera.tipo = "Autos";
                     miCochera.HoraInicio = "15:00";
@@ -45,14 +45,23 @@ namespace AlquilaCocheras.Web.MasterPages
                     miCochera.Latitud = 20.22;
                     miCochera.Longitud = 32.33;
                     miCochera.Precio = 50.00;
-                   
+                    miCochera.imagen = "/imagenes/cocheras/ejemplo.jpg";
                     resultado.Add(miCochera);
                    
                     GridView1.DataSource = resultado;
+                    
                     GridView1.DataBind();
-                    //GridView1.SelectedIndex = 0; 
+                    //GridView1.SelectedIndex = 0;
+
+                   var f = DateTime.Now.Date;
+                   
+                     
                 }
         }
 
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

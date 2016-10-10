@@ -17,6 +17,11 @@ namespace AlquilaCocheras.Web.propietarios
                 Session["url"] = "/propietarios/perfil.aspx";
                 Response.Redirect("/login.aspx");
             }
+            txtNombre.Text = "Propietario";
+            txtApellido.Text = "PropietarioApellido";
+            txtEmail.Text = "Propietario@gmail.com";
+            txtContrasenia.Text = "Password1";
+            txtConfContrasenia.Text = "Password1";
         }
 
         protected void btnActualizar_Click(object sender, EventArgs e)

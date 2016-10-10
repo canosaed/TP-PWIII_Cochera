@@ -25,11 +25,11 @@
     <div class="form-group">
     <asp:Label ID="label3" runat="server" Text="Email: "></asp:Label>
     <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" ClientIDMode="Static" Enabled="false" ></asp:TextBox>
-    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtEmail" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar un email"></asp:RequiredFieldValidator>
+   
     </div>
     <div class="form-group">
     <asp:Label ID="label4" runat="server" Text="Contraseña: "></asp:Label>
-    <asp:TextBox ID="txtContrasenia" CssClass="form-control" runat="server" TextMode="Password" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox  ID="txtContrasenia" CssClass="form-control" runat="server" TextMode="Password" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtContrasenia" ForeColor="Red" runat="server" ErrorMessage="Debe ingresar una contrasena"></asp:RequiredFieldValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ForeColor="Red" ControlToValidate="txtContrasenia" ValidationExpression="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" runat="server" ErrorMessage="<BR> La contraseña debe tener al menos 8 caracteres, una mayuscula y un numero."></asp:RegularExpressionValidator>
     </div>
