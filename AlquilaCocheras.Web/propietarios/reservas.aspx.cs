@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -12,7 +13,16 @@ namespace AlquilaCocheras.Web.propietarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                string fechaConFormato = string.Empty;
+                //formatea la fecha si viene en formato yyyy-mm-dd
+                fechaConFormato = Regex.Replace(txtFechaInicio.Text,
+                @"\b(?<yyyy>\d{4})-(?<mm>\d{1,2})-(?<dd>\d{1,2})\b",
+                "${dd}/${mm}/${yyyy}");
+                txtFechaInicio.Text = fechaConFormato;
+            }
+            
             if (Session["tipo"] == null)
             {
                 Session["url"] = "/propietarios/reservas.aspx";

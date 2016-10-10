@@ -12,7 +12,7 @@
                             <h6>Buscar Cochera Disponible</h6>
     <div class="form-horizontal">
     <asp:Label ID="label1" runat="server" Text="Ubicación: "></asp:Label>
-    <asp:TextBox CssClass="form-control" ID="txtUbicacion" runat="server" ClientIDMode="Static"></asp:TextBox>
+    <asp:TextBox CssClass="form-control" ID="txtUbicacion" runat="server" ClientIDMode="Static" onClick="initAutocomplete()"></asp:TextBox>
     </div>
     <div class="form-horizontal">
     <asp:Label ID="label2" runat="server" Text="Período Disponible: "></asp:Label>
@@ -21,17 +21,17 @@
               runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."
                    ControlToValidate="txtFechaInicio"
                   ForeColor="Red"
-                  ValidationExpression="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
+                  ValidationExpression="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" ValidationGroup="AllValidators">
                   </asp:RegularExpressionValidator> 
     <asp:TextBox CssClass="form-control" ID="txtFechaFin" runat="server" ClientIDMode="Static" PlaceHolder="Fecha Finalizado" TextMode="Date"></asp:TextBox>
     <asp:RegularExpressionValidator ID="RegularExpressionValidator2"
               runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."
                    ControlToValidate="txtFechaFin"
                   ForeColor="Red"
-                  ValidationExpression="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
+                  ValidationExpression="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d" ValidationGroup="AllValidators">
                   </asp:RegularExpressionValidator> 
      
-    <asp:CompareValidator ID="CompareValidator1" ControlToValidate="txtFechaInicio" ControlToCompare="txtFechaFin" ForeColor="Red" Operator="LessThan" Type="Date" runat="server" ErrorMessage="La fecha de inicio debe ser menor que la de expiracion"></asp:CompareValidator>
+    <asp:CompareValidator ID="CompareValidator1" ControlToValidate="txtFechaInicio" ControlToCompare="txtFechaFin" ForeColor="Red" Operator="LessThan" Type="Date" runat="server" ErrorMessage="La fecha de inicio debe ser menor que la de expiracion" ValidationGroup="AllValidators"></asp:CompareValidator>
    </div>
 
     <%--si no se encuentran resultados mostrar mensaje "No se encontraron resultados"--%>
@@ -48,6 +48,7 @@
             </div>
         </div>
     </div>
+           
 <section class="bg-primary">
     <div class="container">
         <h5>Resultado de la busqueda</h5>
@@ -55,7 +56,7 @@
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
             <Columns>
             <%--boton reservar...--%>
-            <asp:TemplateField ItemStyle-HorizontalAlign="Center" >
+            <asp:TemplateField ItemStyle-HorizontalAlign="Center">
                 <ItemTemplate>
                      <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" CssClass="btn btn-sm btn-outline page-scroll">Reservar</asp:HyperLink>
                 </ItemTemplate>
@@ -64,7 +65,9 @@
              <%--Api google Map --%>   
             <asp:TemplateField HeaderText="Ubicación Mapa" ItemStyle-CssClass="mapa">
                 <ItemTemplate>
-                    <ucpw3:UserControlMapa ID="UCMapa" runat="server" />                
+                    <ucpw3:UserControlMapa ID="UCMapa" runat="server" /> 
+                   <%--  <asp:TextBox ID="txtLatitud" runat="server" CssClass="form-control" ></asp:TextBox>
+                    <asp:TextBox ID="txtLongitud" runat="server" CssClass="form-control"></asp:TextBox> --%>              
                 </ItemTemplate>
             </asp:TemplateField>           
 
@@ -75,27 +78,9 @@
             <asp:BoundField DataField="HoraFin" HeaderText="Hora de finalizacion" ReadOnly="True" />
             <asp:BoundField DataField="FechaInicio" HeaderText="Fecha de inicio" ReadOnly="True" />
             <asp:BoundField DataField="FechaFin" HeaderText="Fecha de Finalizado" ReadOnly="True" />
-            <%--<asp:BoundField DataField="Latitud" HeaderText="Latitud" ReadOnly="True" />
-            <asp:BoundField DataField="Longitud" HeaderText="Longitud" ReadOnly="True" /> --%>
-            <asp:BoundField DataField="Precio" HeaderText="Precio" ReadOnly="True" />
-             <%--campos editables...--%>
-            <asp:TemplateField HeaderText="Latitud">
-                <ItemTemplate>
-                    <asp:Label id="lblLatitud" runat="server"></asp:Label>
-                </ItemTemplate>
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtLatitud" runat="server" CssClass="form-control" ></asp:TextBox>
-                </EditItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Longitud">
-                <ItemTemplate>
-                    <asp:Label id="lblLongitud" runat="server"></asp:Label>
-                </ItemTemplate>
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtLongitud" runat="server" CssClass="form-control" ></asp:TextBox>
-                </EditItemTemplate>
-            </asp:TemplateField>
-            
+            <%-- --%><asp:BoundField DataField="Latitud" HeaderText="Latitud" ReadOnly="True" />
+            <asp:BoundField DataField="Longitud" HeaderText="Longitud" ReadOnly="True" />
+            <asp:BoundField DataField="Precio" HeaderText="Precio" ReadOnly="True" />  
         </Columns>
         </asp:GridView >
        </div>

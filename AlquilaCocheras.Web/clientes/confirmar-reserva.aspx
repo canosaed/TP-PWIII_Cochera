@@ -76,7 +76,7 @@
     </div>
 
     <div class="caption">
-    <asp:Button CssClass="btn btn-primary" ID="btnConfirmar" runat="server" Text="Confirmar Reserva" ClientIDMode="Static"/>   
+    <asp:Button CssClass="btn btn-primary" ID="btnConfirmar" runat="server" Text="Confirmar Reserva" ClientIDMode="Static" OnClick="btnConfirmar_Click"/>   
     <asp:Button CssClass="btn btn-danger" ID="btnCancelar" runat="server" Text="Cancelar" ClientIDMode="Static" />
     </div>
 

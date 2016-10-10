@@ -21,15 +21,21 @@ namespace AlquilaCocheras.Web.clientes
         }
         protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            String fechaInicio = txtFechaInicio.Text.Substring(0, 2);
-            String fechaFin = txtFechaFin.Text.Substring(0, 2);
-            String mesInicio = txtFechaInicio.Text.Substring(4, 6);
-            String mesFin = txtFechaFin.Text.Substring(4, 6);
-            if (Int32.Parse(fechaInicio) < Int32.Parse(fechaFin))/*|| Int32.Parse(mesInicio) < Int32.Parse(mesFin) && Int32.Parse(fechaFin ) < Int32.Parse(fechaInicio)*/
+            DateTime fechainicio = Convert.ToDateTime(txtFechaInicio.Text);
+            DateTime fechafin = Convert.ToDateTime(txtFechaFin.Text);
+
+            if (fechafin < fechainicio)
             {
 
-                args.IsValid = false;
+            }
+        }
 
+        protected void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            if (Page.IsValid)
+            {
+                lblResultado.CssClass = "alert alert-success";
+                lblResultado.Text = "Operación exitosa";
             }
         }
     }

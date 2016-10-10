@@ -14,11 +14,11 @@
     <div class="form-group">	
         <asp:Label ID="label1" runat="server" Text="Período Disponible: "></asp:Label>
    
-        <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Inicio" TextMode="Date" ></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtFechaInicio" ForeColor="Red" runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."></asp:RequiredFieldValidator>
+        <asp:TextBox ID="txtFechaInicio" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Inicio" TextMode="Date" ValidationGroup="AllValidators"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtFechaInicio" ForeColor="Red" runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa." ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
     
-        <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Fin" TextMode="Date"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtFechaFin" ForeColor="Red" runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa."></asp:RequiredFieldValidator>
+        <asp:TextBox ID="txtFechaFin" CssClass="form-control" runat="server" ClientIDMode="Static" Text=" " placeholder="Fecha Fin" TextMode="Date" ValidationGroup="AllValidators"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtFechaFin" ForeColor="Red" runat="server" ErrorMessage="Por favor ingrese una fecha valida dd/mm/aaaa." ValidationGroup="AllValidators"></asp:RequiredFieldValidator>
         <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="El periodo de fechas a filtrar no puede ser mayor de 90 días"></asp:CustomValidator>
     </div>
         <div class="action">
