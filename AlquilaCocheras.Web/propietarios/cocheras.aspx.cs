@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using ClassLibrary1;
+using AlquilaCocheras.Web.App_Code;
 namespace AlquilaCocheras.Web.propietarios
 {
     public partial class cocheras : System.Web.UI.Page

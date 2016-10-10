@@ -12,9 +12,8 @@
                             <h6>Buscar Cochera Disponible</h6>
     <div class="form-horizontal">
     <asp:Label ID="label1" runat="server" Text="Ubicación: "></asp:Label>
-    <asp:TextBox CssClass="form-control" ID="txtUbicacion" runat="server" ClientIDMode="Static"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtUbicacion" ValidationGroup="buscador" runat="server" ErrorMessage="Debes ingresar una ubicacion."></asp:RequiredFieldValidator>
-
+    <asp:TextBox CssClass="form-control" ID="txtUbicacion" runat="server" ClientIDMode="Static" OnKeyup="initAutocomplete();"></asp:TextBox>       
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtUbicacion" ValidationGroup="buscador" runat="server" ErrorMessage="Debes ingresar una ubicacion." ForeColor="Red"></asp:RequiredFieldValidator>
     </div>
     <div class="form-horizontal">
     <asp:Label ID="label2" runat="server" Text="Período Disponible: "></asp:Label>
@@ -53,9 +52,11 @@
             </div>
         </div>
     </div>
-<section class="bg-primary">
+
+        <h4 id="titleResultadoBusqueda" runat="server" class="text-center" visible="false">Resultado de la busqueda</h4>
+
+<section>
     <div class="container">
-        <h5>Resultado de la busqueda</h5>
         <div class="row">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
             <Columns>

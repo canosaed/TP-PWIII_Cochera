@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using ClassLibrary1;
+using AlquilaCocheras.Web.App_Code;
 namespace AlquilaCocheras.Web.clientes
 {
     public partial class confirmar_reserva : System.Web.UI.Page

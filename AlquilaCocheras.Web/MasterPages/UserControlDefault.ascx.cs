@@ -1,4 +1,5 @@
-﻿using ClassLibrary1;
+﻿using AlquilaCocheras.Web.App_Code;
+using ClassLibrary1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace AlquilaCocheras.Web.MasterPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           lblResultado.Text=String.Empty;
         }
         protected void btnFiltrar_Click(object sender, EventArgs e)
         {
@@ -28,7 +29,10 @@ namespace AlquilaCocheras.Web.MasterPages
                 }
                 else if (txtUbicacion.Text.ToLower() == "haedo" || txtUbicacion.Text == "Haedo, Buenos Aires, Argentina")
                 {
-                    lblResultado.CssClass = " ";
+                   
+                    lblResultado.Text = String.Empty;
+                   
+                    titleResultadoBusqueda.Visible=true; 
                     //lblResultado.Text = "<h5>Buscando ...</h5>";
                 
                     ///////////////

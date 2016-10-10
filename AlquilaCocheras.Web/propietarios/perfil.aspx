@@ -27,6 +27,7 @@
     <asp:TextBox ID="txtEmail" CssClass="form-control" runat="server" ClientIDMode="Static" Enabled="false" ></asp:TextBox>
    
     </div>
+   
     <div class="form-group">
     <asp:Label ID="label4" runat="server" Text="Contraseña: "></asp:Label>
     <asp:TextBox  ID="txtContrasenia" CssClass="form-control" runat="server" TextMode="Password" ClientIDMode="Static"></asp:TextBox>
@@ -39,14 +40,15 @@
     <asp:TextBox ID="txtConfContrasenia" CssClass="form-control" runat="server" TextMode="Password" ClientIDMode="Static"></asp:TextBox>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" ControlToValidate="txtConfContrasenia" ForeColor="Red" runat="server" ErrorMessage="Debe reingresar la contrasena"></asp:RequiredFieldValidator>
     </div>
-                            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtContrasenia"  ControlToCompare="txtConfContrasenia" ForeColor="Red" ErrorMessage="Las contraseñas deben concidir"></asp:CompareValidator>
+    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToValidate="txtContrasenia"  ControlToCompare="txtConfContrasenia" ForeColor="Red" ErrorMessage="Las contraseñas deben concidir"></asp:CompareValidator>
+                                 
     <div class="form-group">
         <div class="col-sm-16">
-    <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static" CssClass="checkbox-inline">
-        <asp:ListItem Text=" Cliente     " Value="1" />
-        <asp:ListItem Text=" Propietario " Value="2" />
-    </asp:RadioButtonList>
-        </div>
+        <asp:RadioButtonList ID="rblPerfil" runat="server" ClientIDMode="Static" CssClass="checkbox-inline">
+            <asp:ListItem Text=" Cliente     " Value="1" />
+            <asp:ListItem Text=" Propietario " Value="2" />
+        </asp:RadioButtonList>
+     </div>
     <asp:RequiredFieldValidator ID="RequiredFieldValidator6" ControlToValidate="rblPerfil" ForeColor="Red" runat="server" ErrorMessage="Debe elegir una opción"></asp:RequiredFieldValidator>
     </div>
     <div class="form-group">
