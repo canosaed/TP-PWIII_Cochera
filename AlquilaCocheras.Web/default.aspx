@@ -29,6 +29,8 @@
             </span>
         </div>
     </div>
-    --%>                                  
+    --%> 
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=MapMostar"></script> 
+                             
 </asp:Content>
 

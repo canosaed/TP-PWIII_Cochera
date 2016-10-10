@@ -160,5 +160,7 @@
                     </div>
                 </div>
             </div>
-<%--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>   --%> 
+<%----%> <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAq6s79xPm1V6KwH0f0CgdJyINscJmMCCQ&libraries=places&callback=initAutocomplete"
+         async defer></script>
+
 </asp:Content>

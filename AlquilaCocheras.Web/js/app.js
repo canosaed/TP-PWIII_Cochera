@@ -4,10 +4,29 @@ $('#miModal').on('shown.modal', function () {
 });
 /////////////////////////
 
-//$(document).ready(function () {
-//    initAutocomplete();
-//});
- 
+/*$(document).ready(function () {
+    initAutocomplete();
+});*/
+/*$(document).ready(function () {
+    MapMostar();
+});
+*/
+function MapMostar() {
+    //initAutocomplete();
+    //obtengo latitud i longitud
+    var lat = document.getElementById('txtLatitud');
+    var lng = document.getElementById('txtLongitud');
+    //
+    var latlng = new google.maps.LatLng(lat, lng);
+    var myOptions = {
+        zoom: 8,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    map = new google.maps.Map(document.getElementById("map"), myOptions);
+}
+// Execute our 'initialise' function once the page has loaded.
+//google.maps.event.addDomListener(window, 'load', MapMostar);
 // This example adds a search box to a map, using the Google Place Autocomplete
 // feature. People can enter geographical searches. The search box will return a
 // pick list containing a mix of places and predicted search terms.
@@ -18,7 +37,7 @@ function initAutocomplete() {
         zoom: 16,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
-
+    
     // Create the search box and link it to the UI element.
     var input = document.getElementById('txtUbicacion');
     var searchBox = new google.maps.places.SearchBox(input);
@@ -63,7 +82,7 @@ function initAutocomplete() {
                 title: place.name,
                 position: place.geometry.location
             }));
-            //Obtener Lactitud y Longitud
+            //asignar y mostrar txt: Lactitud y Longitud
             $("#txtLatitud").val(place.geometry.location.lat());
             $("#txtLongitud").val(place.geometry.location.lng());
             ////

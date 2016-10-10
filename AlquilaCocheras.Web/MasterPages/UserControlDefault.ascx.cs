@@ -31,7 +31,7 @@ namespace AlquilaCocheras.Web.MasterPages
                 {
                    
                     lblResultado.Text = String.Empty;
-                   
+                    lblResultado.CssClass = " ";
                     titleResultadoBusqueda.Visible=true; 
                     //lblResultado.Text = "<h5>Buscando ...</h5>";
                 
@@ -46,8 +46,8 @@ namespace AlquilaCocheras.Web.MasterPages
                     miCochera.HoraFin = "16:00";
                     miCochera.FechaInicio = "20/10/2016";
                     miCochera.FechaFin = "22/10/2016";
-                    miCochera.Latitud = 20.22;
-                    miCochera.Longitud = 32.33;
+                    miCochera.Latitud = -34.843;
+                    miCochera.Longitud = 58.837;
                     miCochera.Precio = 50.00;
                     miCochera.imagen = "/imagenes/cocheras/ejemplo.jpg";
                     resultado.Add(miCochera);
@@ -56,6 +56,9 @@ namespace AlquilaCocheras.Web.MasterPages
                     
                     GridView1.DataBind();
                     //GridView1.SelectedIndex = 0;
+                   txtLatitud.Text = Convert.ToString(miCochera.Latitud);
+                   txtLongitud.Text = Convert.ToString(miCochera.Longitud);
+
 
                    var f = DateTime.Now.Date;
                    

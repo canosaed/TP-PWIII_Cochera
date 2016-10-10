@@ -12,7 +12,7 @@
                             <h6>Buscar Cochera Disponible</h6>
     <div class="form-horizontal">
     <asp:Label ID="label1" runat="server" Text="Ubicación: "></asp:Label>
-    <asp:TextBox CssClass="form-control" ID="txtUbicacion" runat="server" ClientIDMode="Static" OnKeyup="initAutocomplete();"></asp:TextBox>       
+    <asp:TextBox CssClass="form-control" ID="txtUbicacion" runat="server" ClientIDMode="Static"></asp:TextBox>       
          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtUbicacion" ValidationGroup="buscador" runat="server" ErrorMessage="Debes ingresar una ubicacion." ForeColor="Red"></asp:RequiredFieldValidator>
     </div>
     <div class="form-horizontal">
@@ -73,7 +73,7 @@
                 </ItemTemplate>
             </asp:TemplateField>                  
              <%--Api google Map --%>   
-            <asp:TemplateField HeaderText="Ubicación Mapa" ItemStyle-CssClass="mapa">
+            <asp:TemplateField HeaderText="Ubicación Mapa" ItemStyle-CssClass="img-responsive">
                 <ItemTemplate>
                     <ucpw3:UserControlMapa ID="UCMapa" runat="server" />                
                 </ItemTemplate>
@@ -86,8 +86,10 @@
             <asp:BoundField DataField="HoraFin" HeaderText="Hora de finalizacion" ReadOnly="True" />
             <asp:BoundField DataField="FechaInicio" HeaderText="Fecha de inicio" ReadOnly="True" />
             <asp:BoundField DataField="FechaFin" HeaderText="Fecha de Finalizado" ReadOnly="True" />
-            <%-- --%><asp:BoundField DataField="Latitud" HeaderText="Latitud" ReadOnly="True" />
+            <%-- 
+            <asp:BoundField DataField="Latitud" HeaderText="Latitud" ReadOnly="True" />
             <asp:BoundField DataField="Longitud" HeaderText="Longitud" ReadOnly="True" />
+            --%>
             <asp:BoundField DataField="Precio" HeaderText="Precio" ReadOnly="True" />
              <%--campos editables...
             <asp:TemplateField HeaderText="Latitud">
@@ -111,5 +113,7 @@
         </asp:GridView >
        </div>
    </div>
+    <asp:TextBox ID="txtLatitud" runat="server" CssClass="form-control" type="hidden"></asp:TextBox>
+    <asp:TextBox ID="txtLongitud" runat="server" CssClass="form-control" type="hidden"></asp:TextBox>
 </section>  
     <%--Fin User Control--%>
