@@ -1,8 +1,6 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/MasterPages/Base/Base.Master" AutoEventWireup="true" CodeBehind="Clientes.master.cs" Inherits="AlquilaCocheras.Web.MasterPages.Clientes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head_Base" runat="server">
-        <link rel="stylesheet" href="../css/new-age.css"/>
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="stylesheet" href="../css/app.css"/>
+        
     <asp:ContentPlaceHolder ID="ContentPlaceHolder_Head" runat="server">
     </asp:ContentPlaceHolder>    
 </asp:Content>

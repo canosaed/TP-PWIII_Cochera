@@ -4,6 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
 <%-- <link rel="stylesheet" href="../css/styles.css"/>
      <link rel="stylesheet" href="../css/app.css"/>--%>
+    <script type="text/javascript" src="../js/app.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
     

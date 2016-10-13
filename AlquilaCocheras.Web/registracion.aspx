@@ -5,9 +5,9 @@
          <link rel="stylesheet" href="../css/app.css"/>--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
-    <div class="page-content conntent-box-large">
+    <div class="page-content container-fluid">
 		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
+			<div class="col-xs-6 col-xs-offset-3">
 				<div class="login-wrapper">
 			        <div class="box">
 			            <div class="content-wrap">

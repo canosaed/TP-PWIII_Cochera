@@ -44,7 +44,7 @@
     </div> 
 
     <div class="action">
-    <asp:Button CssClass="btn btn-primary btn btn-outline page-scroll" ID="btnFiltrar" ValidationGroup="buscador" runat="server" Text="Buscar" ClientIDMode="Static" OnClick="btnFiltrar_Click"/>
+    <asp:Button CssClass="btn btn-primary btn-xl btn-outline page-scroll" ID="btnFiltrar" ValidationGroup="buscador" runat="server" Text="Buscar" ClientIDMode="Static" OnClick="btnFiltrar_Click"/>
     </div>               
                         </div>
                     </div>			           
@@ -56,14 +56,16 @@
         <h4 id="titleResultadoBusqueda" runat="server" class="text-center" visible="false">Resultado de la busqueda</h4>
 
 <section>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="box">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
             <Columns>
             <%--boton reservar...--%>
             <asp:TemplateField ItemStyle-HorizontalAlign="Center" >
                 <ItemTemplate>
-                     <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" class="btn btn-sm btn-primary btn-outline page-scroll">Reservar</asp:HyperLink>
+                     <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" class="btn btn-sm btn-outline page-scroll">Reservar</asp:HyperLink>
                 </ItemTemplate>
             </asp:TemplateField> 
             <%-- Imagen  --%>
@@ -111,6 +113,8 @@
             --%>
         </Columns>
         </asp:GridView >
+                    </div>
+            </div>
        </div>
    </div>
     <asp:TextBox ID="txtLatitud" runat="server" CssClass="form-control" type="hidden"></asp:TextBox>

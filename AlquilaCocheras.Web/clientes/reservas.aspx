@@ -7,17 +7,16 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
 
     <%--    LISTADO DE RESERVAS (gridview, repeater o datalist)
-        
             fecha inicio.
             fecha fin
             horario
             precio total.
             puntuación 
-        
         --%>
-    <section class="bg-primary">
-    <div class="container">
-        <h5>Mis Reservas</h5>
+    <section>
+    <div class="container-fluid">
+        <div class="col-md-6 col-md-offset-3">
+        <h5 class="text-capitalize text-center">Mis Reservas</h5>
         <div class="row">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
             <Columns>
@@ -47,6 +46,7 @@
         </Columns>
         </asp:GridView >
        </div>
+    </div>
    </div>
 </section>  
   

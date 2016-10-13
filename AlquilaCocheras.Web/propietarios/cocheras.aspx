@@ -2,13 +2,13 @@
 <%@ Register Src="~/MasterPages/UserControlMapa.ascx" TagPrefix="ucpw3" TagName="UserControlMapa" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <%-- <script type="text/javascript" src="../js/app.js"></script>--%>
+    <%-- --%><script type="text/javascript" src="../js/app.js"></script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
-     <div class="page-content container">
+     <div class="page-content container-fluid">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-xs-6 col-xs-offset-3">
 				<div class="login-wrapper">
 			        <div class="box">
 			            <div class="content-wrap">

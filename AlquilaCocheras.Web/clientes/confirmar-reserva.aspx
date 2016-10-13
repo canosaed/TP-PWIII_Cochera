@@ -1,15 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/Clientes.Master" AutoEventWireup="true" CodeBehind="confirmar-reserva.aspx.cs" Inherits="AlquilaCocheras.Web.clientes.confirmar_reserva" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder_Head" runat="server">
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <%-- <link rel="stylesheet" href="../css/confirmar-reserva.css"/> --%>
-    <script src="../js/confirmar-reserva.js"></script>
-      
+    <%----%> <script type="text/javascript" src="../js/confirmar-reserva.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder_Principal" runat="server">
-    <div class="page-content container">
+    <div class="page-content container-fluid">
 		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
+			<div class="col-md-6 col-md-offset-3">
 				<div class="login-wrapper">
 			        <div class="box">
 			            <div class="content-wrap">
@@ -65,7 +62,7 @@
     <asp:Label ID="lblUbicacion" ClientIDMode="Static" runat="server"></asp:Label>
     </div>
     <div class="form-group">
-    <asp:Image ID="imgFoto" ClientIDMode="Static" runat="server" CssClass="img-responsive img-thumbnail"/>
+    <asp:Image ID="imgFoto" ClientIDMode="Static" runat="server" CssClass="img-rounded img img-responsive"/>
     </div>
     <div class="form-group">
     <asp:Label ID="label5" runat="server" Text="Precio por hora: "></asp:Label>

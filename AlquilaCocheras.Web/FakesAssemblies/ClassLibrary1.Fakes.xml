@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ClassLibrary1.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ClassLibrary1.Fakes.ShimCochera">
+            <summary>Tipo de correcciones de compatibilidad (shim) de ClassLibrary1.Cochera</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimCochera.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimCochera.#ctor(ClassLibrary1.Cochera)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimCochera.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimCochera.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.Constructor">
+            <summary>Establecer el shim de Cochera.Cochera()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.FechaFinGet">
+            <summary>Establecer el shim de Cochera.get_FechaFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.FechaFinSetString">
+            <summary>Establecer el shim de Cochera.set_FechaFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.FechaInicioGet">
+            <summary>Establecer el shim de Cochera.get_FechaInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.FechaInicioSetString">
+            <summary>Establecer el shim de Cochera.set_FechaInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.HoraFinGet">
+            <summary>Establecer el shim de Cochera.get_HoraFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.HoraFinSetString">
+            <summary>Establecer el shim de Cochera.set_HoraFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.HoraInicioGet">
+            <summary>Establecer el shim de Cochera.get_HoraInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.HoraInicioSetString">
+            <summary>Establecer el shim de Cochera.set_HoraInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.LatitudGet">
+            <summary>Establecer el shim de Cochera.get_Latitud()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.LatitudSetDouble">
+            <summary>Establecer el shim de Cochera.set_Latitud(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.LongitudGet">
+            <summary>Establecer el shim de Cochera.get_Longitud()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.LongitudSetDouble">
+            <summary>Establecer el shim de Cochera.set_Longitud(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.MetrosGet">
+            <summary>Establecer el shim de Cochera.get_Metros()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.MetrosSetDouble">
+            <summary>Establecer el shim de Cochera.set_Metros(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.PrecioGet">
+            <summary>Establecer el shim de Cochera.get_Precio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.PrecioSetDouble">
+            <summary>Establecer el shim de Cochera.set_Precio(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.PuntuacionGet">
+            <summary>Establecer el shim de Cochera.get_Puntuacion()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.PuntuacionSetDouble">
+            <summary>Establecer el shim de Cochera.set_Puntuacion(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.imagenGet">
+            <summary>Establecer el shim de Cochera.get_imagen()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.imagenSetString">
+            <summary>Establecer el shim de Cochera.set_imagen(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.tipoGet">
+            <summary>Establecer el shim de Cochera.get_tipo()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.tipoSetString">
+            <summary>Establecer el shim de Cochera.set_tipo(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.ubicacionGet">
+            <summary>Establecer el shim de Cochera.get_ubicacion()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.ubicacionSetString">
+            <summary>Establecer el shim de Cochera.set_ubicacion(String value)</summary>
+        </member>
+        <member name="T:ClassLibrary1.Fakes.ShimCochera.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.FechaFinGet">
+            <summary>Establecer el shim de Cochera.get_FechaFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.FechaFinSetString">
+            <summary>Establecer el shim de Cochera.set_FechaFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.FechaInicioGet">
+            <summary>Establecer el shim de Cochera.get_FechaInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.FechaInicioSetString">
+            <summary>Establecer el shim de Cochera.set_FechaInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.HoraFinGet">
+            <summary>Establecer el shim de Cochera.get_HoraFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.HoraFinSetString">
+            <summary>Establecer el shim de Cochera.set_HoraFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.HoraInicioGet">
+            <summary>Establecer el shim de Cochera.get_HoraInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.HoraInicioSetString">
+            <summary>Establecer el shim de Cochera.set_HoraInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.LatitudGet">
+            <summary>Establecer el shim de Cochera.get_Latitud()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.LatitudSetDouble">
+            <summary>Establecer el shim de Cochera.set_Latitud(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.LongitudGet">
+            <summary>Establecer el shim de Cochera.get_Longitud()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.LongitudSetDouble">
+            <summary>Establecer el shim de Cochera.set_Longitud(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.MetrosGet">
+            <summary>Establecer el shim de Cochera.get_Metros()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.MetrosSetDouble">
+            <summary>Establecer el shim de Cochera.set_Metros(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.PrecioGet">
+            <summary>Establecer el shim de Cochera.get_Precio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.PrecioSetDouble">
+            <summary>Establecer el shim de Cochera.set_Precio(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.PuntuacionGet">
+            <summary>Establecer el shim de Cochera.get_Puntuacion()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.PuntuacionSetDouble">
+            <summary>Establecer el shim de Cochera.set_Puntuacion(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.imagenGet">
+            <summary>Establecer el shim de Cochera.get_imagen()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.imagenSetString">
+            <summary>Establecer el shim de Cochera.set_imagen(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.tipoGet">
+            <summary>Establecer el shim de Cochera.get_tipo()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.tipoSetString">
+            <summary>Establecer el shim de Cochera.set_tipo(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.ubicacionGet">
+            <summary>Establecer el shim de Cochera.get_ubicacion()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimCochera.AllInstances.ubicacionSetString">
+            <summary>Establecer el shim de Cochera.set_ubicacion(String value)</summary>
+        </member>
+        <member name="T:ClassLibrary1.Fakes.ShimReserva">
+            <summary>Tipo de correcciones de compatibilidad (shim) de ClassLibrary1.Reserva</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimReserva.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimReserva.#ctor(ClassLibrary1.Reserva)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimReserva.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.ShimReserva.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.Constructor">
+            <summary>Establecer el shim de Reserva.Reserva()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.FechaFinGet">
+            <summary>Establecer el shim de Reserva.get_FechaFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.FechaFinSetString">
+            <summary>Establecer el shim de Reserva.set_FechaFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.FechaInicioGet">
+            <summary>Establecer el shim de Reserva.get_FechaInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.FechaInicioSetString">
+            <summary>Establecer el shim de Reserva.set_FechaInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.HoraFinGet">
+            <summary>Establecer el shim de Reserva.get_HoraFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.HoraFinSetString">
+            <summary>Establecer el shim de Reserva.set_HoraFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.HoraInicioGet">
+            <summary>Establecer el shim de Reserva.get_HoraInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.HoraInicioSetString">
+            <summary>Establecer el shim de Reserva.set_HoraInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.PrecioGet">
+            <summary>Establecer el shim de Reserva.get_Precio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.PrecioSetDouble">
+            <summary>Establecer el shim de Reserva.set_Precio(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.ubicacionGet">
+            <summary>Establecer el shim de Reserva.get_ubicacion()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.ubicacionSetString">
+            <summary>Establecer el shim de Reserva.set_ubicacion(String value)</summary>
+        </member>
+        <member name="T:ClassLibrary1.Fakes.ShimReserva.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.FechaFinGet">
+            <summary>Establecer el shim de Reserva.get_FechaFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.FechaFinSetString">
+            <summary>Establecer el shim de Reserva.set_FechaFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.FechaInicioGet">
+            <summary>Establecer el shim de Reserva.get_FechaInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.FechaInicioSetString">
+            <summary>Establecer el shim de Reserva.set_FechaInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.HoraFinGet">
+            <summary>Establecer el shim de Reserva.get_HoraFin()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.HoraFinSetString">
+            <summary>Establecer el shim de Reserva.set_HoraFin(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.HoraInicioGet">
+            <summary>Establecer el shim de Reserva.get_HoraInicio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.HoraInicioSetString">
+            <summary>Establecer el shim de Reserva.set_HoraInicio(String value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.PrecioGet">
+            <summary>Establecer el shim de Reserva.get_Precio()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.PrecioSetDouble">
+            <summary>Establecer el shim de Reserva.set_Precio(Double value)</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.ubicacionGet">
+            <summary>Establecer el shim de Reserva.get_ubicacion()</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.ShimReserva.AllInstances.ubicacionSetString">
+            <summary>Establecer el shim de Reserva.set_ubicacion(String value)</summary>
+        </member>
+        <member name="T:ClassLibrary1.Fakes.StubCochera">
+            <summary>Tipo stub de ClassLibrary1.Cochera</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.StubCochera.#ctor">
+            <summary>Inicializa una nueva instancia</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.StubCochera.InitializeStub">
+            <summary>Inicializa una nueva instancia de type StubCochera</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.StubCochera.CallBase">
+            <summary>Obtiene o establece un valor que indica si debe llamarse al método base en lugar del comportamiento de reserva</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.StubCochera.InstanceBehavior">
+            <summary>Obtiene o establece el comportamiento de instancia.</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.StubCochera.InstanceObserver">
+            <summary>Obtiene o establece el observador de la instancia.</summary>
+        </member>
+        <member name="T:ClassLibrary1.Fakes.StubReserva">
+            <summary>Tipo stub de ClassLibrary1.Reserva</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.StubReserva.#ctor">
+            <summary>Inicializa una nueva instancia</summary>
+        </member>
+        <member name="M:ClassLibrary1.Fakes.StubReserva.InitializeStub">
+            <summary>Inicializa una nueva instancia de type StubReserva</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.StubReserva.CallBase">
+            <summary>Obtiene o establece un valor que indica si debe llamarse al método base en lugar del comportamiento de reserva</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.StubReserva.InstanceBehavior">
+            <summary>Obtiene o establece el comportamiento de instancia.</summary>
+        </member>
+        <member name="P:ClassLibrary1.Fakes.StubReserva.InstanceObserver">
+            <summary>Obtiene o establece el observador de la instancia.</summary>
+        </member>
+    </members>
+</doc>
