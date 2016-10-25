@@ -60,57 +60,39 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="box">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-responsive table-condensed table-bordered"> 
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                CssClass="table table-responsive table-condensed table-bordered" 
+                      AllowSorting="True"> 
             <Columns>
             <%--boton reservar...--%>
+            <%-- Imagen  --%>
+             <%--Api google Map --%>   
             <asp:TemplateField ItemStyle-HorizontalAlign="Center" >
                 <ItemTemplate>
                      <asp:HyperLink ID="aConfirmar" runat="server" ClientIDMode="Static" NavigateUrl="/clientes/confirmar-reserva.aspx?idcochera=123" class="btn btn-sm btn-outline page-scroll">Reservar</asp:HyperLink>
                 </ItemTemplate>
             </asp:TemplateField> 
-            <%-- Imagen  --%>
             <asp:TemplateField ItemStyle-HorizontalAlign="Center" >
                 <ItemTemplate>
                  <img alt="" class="img-responsive img-thumbnail" src="<%# Eval("imagen") %>" />
                 </ItemTemplate>
+
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
             </asp:TemplateField>                  
-             <%--Api google Map --%>   
             <asp:TemplateField HeaderText="Ubicación Mapa" ItemStyle-CssClass="img-responsive">
                 <ItemTemplate>
                     <ucpw3:UserControlMapa ID="UCMapa" runat="server" />                
                 </ItemTemplate>
-            </asp:TemplateField>           
-
-            <%--campos no editables...--%>
+                    <ItemStyle CssClass="img-responsive"></ItemStyle>
+                </asp:TemplateField>   
+                        
             <asp:BoundField DataField="ubicacion" HeaderText="Ubicacion" InsertVisible="False" ReadOnly="True" />
             <asp:BoundField DataField="tipo" HeaderText="Tipo" ReadOnly="True" />
             <asp:BoundField DataField="HoraInicio" HeaderText="Hora de inicio" ReadOnly="True" />
             <asp:BoundField DataField="HoraFin" HeaderText="Hora de finalizacion" ReadOnly="True" />
             <asp:BoundField DataField="FechaInicio" HeaderText="Fecha de inicio" ReadOnly="True" />
             <asp:BoundField DataField="FechaFin" HeaderText="Fecha de Finalizado" ReadOnly="True" />
-            <%-- 
-            <asp:BoundField DataField="Latitud" HeaderText="Latitud" ReadOnly="True" />
-            <asp:BoundField DataField="Longitud" HeaderText="Longitud" ReadOnly="True" />
-            --%>
             <asp:BoundField DataField="Precio" HeaderText="Precio" ReadOnly="True" />
-             <%--campos editables...
-            <asp:TemplateField HeaderText="Latitud">
-                <ItemTemplate>
-                    <asp:Label id="lblLatitud" runat="server"></asp:Label>
-                </ItemTemplate>
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtLatitud" runat="server" CssClass="form-control" ></asp:TextBox>
-                </EditItemTemplate>
-            </asp:TemplateField>
-            <asp:TemplateField HeaderText="Longitud">
-                <ItemTemplate>
-                    <asp:Label id="lblLongitud" runat="server"></asp:Label>
-                </ItemTemplate>
-                <EditItemTemplate>
-                    <asp:TextBox ID="txtLongitud" runat="server" CssClass="form-control" ></asp:TextBox>
-                </EditItemTemplate>
-            </asp:TemplateField>
-            --%>
         </Columns>
         </asp:GridView >
                     </div>
